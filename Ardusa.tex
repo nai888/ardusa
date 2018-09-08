@@ -2,7 +2,7 @@
 
 \setlrmarginsandblock{1in}{1in}{*}
 \setulmarginsandblock{1in}{1in}{*}
-\checkandfixthelayout 
+\checkandfixthelayout
 
 % Layouts
 \usepackage{afterpage}
@@ -118,6 +118,9 @@
 \newleipzig{nec}{nec}{necessitative}
 \newleipzig{int}{int}{interrogative}
 %\newleipzig{imp}{imp}{imperative}% Already defined
+%\newleipzig{pst}{pst}{past}% Already defined
+\newleipzig{npst}{npst}{nonpast}
+%\newleipzig{fut}{fut}{future}% Already defined
 \renewleipzig{prf}{prf}{perfective}% Already defined as perfect
 \newleipzig{mom}{mom}{momentane}
 \newleipzig{smlf}{smlf}{semelfactive}
@@ -166,6 +169,7 @@
 \newleipzig{ali}{ali}{alienable}
 \newleipzig{inal}{inal}{inalienable}
 %\newleipzig{sg}{sg}{singular}% Already defined
+\newleipzig{pc}{pc}{paucal}
 %\newleipzig{pl}{pl}{plural}% Already defined
 %\newleipzig{def}{def}{definite}% Already defined
 %\newleipzig{indf}{indf}{indefinite}% Already defined
@@ -173,6 +177,9 @@
 \newleipzig{pt}{pt}{patient trigger}
 \newleipzig{dir}{dir}{direct}
 \newleipzig{idr}{idr}{indirect}
+%\newleipzig{top}{top}{topic}% Already defined
+%\newleipzig{nom}{nom}{nominative}% Already defined
+%\newleipzig{acc}{acc}{accusative}% Already defined
 %\newleipzig{erg}{erg}{ergative}% Already defined
 %\newleipzig{abs}{abs}{absolutive}% Already defined
 \newleipzig{ptv}{ptv}{partitive}
@@ -251,19 +258,25 @@
 \newcommand{\dent}[1]{#1̪}
 % Non-syllabic
 \newcommand{\nsyl}[1]{#1̯}
+% Affricates
+\newcommand{\affr}[2]{#1͡#2}
 
 % Define macro so foreign words are italicized
 \newcommand{\fw}[1]{\textit{#1}}
 
-% Title page data
+% Custom name commands
+\newcommand{\landn}{Ardusa}
+\newcommand{\landadj}{Ardusan}
 \newcommand{\langtvk}{Tavonic}
 \newcommand{\nlangtvk}{Tavonak}
 \newcommand{\langank}{Alnuric}
 \newcommand{\nlangank}{Alnurek}
 \newcommand{\langrdk}{Redodhic}
 \newcommand{\nlangrdk}{Redoðik}
-\title{Ardusa}
-\newcommand{\subtitle}{A Grammar of the Ardusan Languages}
+
+% Title page data
+\title{\landn}
+\newcommand{\subtitle}{A Grammar of the \landadj{} Languages}
 \author{Ian A.~Cook}
 \date{\today}
 
@@ -310,11 +323,15 @@
 \printglosses\label{cha:glossary}
 \bigskip
 \noindent\begin{tabular}{@{} l l}
-	\ungr & ungrammatical\\
-	\ques & grammatically questionable\\
-	\excl & semantically odd or ill-formed\\
+\ungr & ungrammatical\\
+\ques & grammatically questionable\\
+\excl & semantically odd or ill-formed\\
 \end{tabular}
 \clearpage
+
+% Acknowledgments
+
+\input{./Chapters/acknowledgments.tex}
 
 % Preface
 
@@ -325,35 +342,38 @@
 \mainmatter
 
 \excnt=1% Reset the numbering of examples to 1
-\input{./Chapters/phonology.tex}
+\input{./Chapters/ethnography.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-\input{./Chapters/writing.tex}
+%\input{./Chapters/phonology.tex}
+
+\excnt=1% Reset the numbering of examples to 1
+%\input{./Chapters/writing.tex}
 
 % I don't think we need this chapter, at least for now
 % \excnt=1% Reset the numbering of examples to 1
 % \input{./Chapters/morphological-typology.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-\input{./Chapters/morphology.tex}
+%\input{./Chapters/morphology.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-\input{./Chapters/compounding-incorporation.tex}
+%\input{./Chapters/compounding-incorporation.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-\input{./Chapters/time-measurement.tex}
+%\input{./Chapters/time-measurement.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-\input{./Chapters/derivation.tex}
+%\input{./Chapters/derivation.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-\input{./Chapters/syntax.tex}
+%\input{./Chapters/syntax.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-\input{./Chapters/discourse.tex}
+%\input{./Chapters/discourse.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-\input{./Chapters/reference-grammar.tex}
+%\input{./Chapters/reference-grammar.tex}
 
 % Appendices
 
@@ -363,16 +383,16 @@
 \input{./Chapters/conceptual-metaphors.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-\input{./Chapters/kinship.tex}
+%\input{./Chapters/kinship.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-\input{./Chapters/names.tex}
+%\input{./Chapters/names.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-\input{./Chapters/examples.tex}
+%\input{./Chapters/examples.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-\input{./Chapters/vocabulary.tex}
+%\input{./Chapters/vocabulary.tex}
 
 % Back matter
 
