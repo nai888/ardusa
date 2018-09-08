@@ -1,0 +1,47 @@
+# Core LaTeX auxiliary files
+*.aux
+*.log
+*.gz
+*.lof
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+
+# Bibliography auxiliary files
+*.bbl
+*.bcf
+*.blg
+*-blx-bib
+*.brf
+*.run.xml
+
+# Glossary auxiliary files
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+
+# Leipzig glossary auxiliary files
+*.lpz
+*.lzo
+*.lzs
+
+# Index auxiliary files
+*.idx
+*.ilg
+*.ind
+*.ist
+
+# Build tool auxiliary files
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+*.fdb_latexmk

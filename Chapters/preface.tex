@@ -1,0 +1,46 @@
+\chapter{Preface}
+\label{cha:preface}
+
+This document provides a detailed grammatical description of \lang{}, a fictional constructed language first created in December of 2015. \lang{} serves as a method for linguistic research, as an intellectual exercise, and as an outlet for creative and artistic expression. It is intended primarily for my own personal use and entertainment, though others with similar linguistic interests will hopefully find it interesting and entertaining as well. I have chosen to use \LaTeX{} to typeset this grammar because it provides a way to be clear, consistent, and organized. Further, since \LaTeX{} uses plain text files, it allows me to use Git for version control so I can keep track of changes over time.
+
+My goal is to build a language with a naturalistic grammar that is linguistically plausible and consistent, yet also original in its content and details. The language was inspired by several concepts I wished to explore, including ergativity, noun incorporation, and a strong emphasis on verbs over other parts of speech, all of which persist in \lang{} in its present form. Some elements are influenced by existing languages such as Finnish, Navajo, and Nahuatl, but it is not meant to simply mimic these, instead drawing this inspiration into new form along with an entirely \fw{a priori} lexicon.
+
+\lang{} is an ongoing project with no fixed endpoint or goal. It has gone through several changes since inception. It was initially called Yusak (natively \fw{Jusak}), but in September of 2017, I chose to revise the language to fit an altered aesthetic. The language's new phonotactics disallowed word-final \phnm{k}, and thus it disallowed a word such as \fw{Jusak}, which meant I needed a new name. I chose Tandi at first. As I continued revising the grammar, I decided to derive the name from the language itself. I changed the root for the word \defn{to speak} and derived a name that means approximately \defn{the thing we speak}. Thus, the language is named Tadoni (natively \fw{\nlang{}}). \lang{} will almost certainly continue to change in the future. Therefore, this document does not serve as the final description of the language, but rather a representation of the language's present state as it currently exists.
+
+This concise grammar is my attempt to document \lang{} in an official and systematic way, and as comprehensively as possible. It represents a synthesis of information elsewhere, both in my files and online, and is intended to be the official description of the language. This is a concise grammar because, admittedly, I am not a professional linguist, nor have I taken any linguistics coursework. My education in linguistics consists solely of self-guided research, which means invariably my knowledge will be limited. It is a concise grammar because, frankly, I don't know enough to go into greater detail. That being said, I'm always eager to learn, and will always accept feedback. Again, learning is one of the reasons for this endeavor.
+
+Since the purpose of writing this grammar is to provide a comprehensive description of \lang{}, not to teach it to others, it is not intended to serve as a textbook or as a way to learn the language. I have organized topics thematically, rather than curricularly, and I employ technical terms when they are precise, accurate, and appropriate. I have not conducted a formal analysis of the language, but I have worked to make it as descriptive as possible.
+
+The discussion is ordered from the smallest elements of the language to the largest. It begins with a description of \lang{}'s phonetics followed by its writing system and orthography, it addresses morphology and the combining of words, it discusses vocabulary and derivation, and it explains syntax and discourse. The final chapter serves as a reference grammar, summarizing all of the previous chapters. There are also several appendices describing the conceptual metaphors that organize much of the lexicon, the naming practices of the fictional \lang{} speakers, several translation examples, and a lexicon. Other resources include a glossary of linguistic glossing abbreviations, a bibliography, and an index.
+
+This document uses several linguistics conventions to clarify meaning. Any reference to specific orthographic spelling is marked with angled brackets, such as \orth{hi}. Pronunciations are usually given phonemically, in which case they are marked with slashes, such as \phnm{hi}. Phonetic pronunciations are used only when conveying specific details like the difference between allophones, and are marked with square brackets, such as \phnt{çi}. Both phonemic and phonetic pronunciations are given using the International Phonetic Alphabet. Most \lang{} words are given using \lang{}'s writing system, such as \scr{je}, but always include a romanization in italics, such as \fw{je}. English glosses are surrounded by single quotes, such as \defn{and}. If a morphological gloss is provided in-line, it is surrounded by parentheses, such as \gloss{\Inf}.
+
+Many short examples are provided in one single line.
+
+\ex<ex:prfshortgloss>
+	\scr{bralloíme} \fw{bralloíme} \phnm{bra\gem{l}o\nsyl{í}me} \defn{pilot's} \gloss{pilot-\Gen}
+\xe
+
+Longer examples are usually provided with a multi-line, or interlinear, gloss. In these examples, the first line presents the example in \lang{}'s writing system, which is followed by an optional romanization that may be omitted. The next line provides the pronunciation. Following this, the romanization is broken into its component morphemes, and the following line provides a morpheme-by-morpheme gloss. The final line provides an English translation of the example phrase or sentence.
+
+\ex<ex:prffullgloss>
+	\begingl
+		\glpreamble \scr{Kevlaúnan ávyynóí merbrallóón tor sýtfízoud.}\\
+		\fw{Kevlaúnan ávyynóí merbrallóón tor sýtfízoud.}\\
+		\phnm{kev\pstrs la\nsyl{ú}nan \pstrs áv\gem{y}nó\nsyl{í} mer\pstrs bra\gem{l}\gem{ó}n tor \pstrs sýtfízo\nsyl{u}d}//
+		\gla k- ev- laún -a -n ávyynóí -∅ mer- brallóó -n to -r sýt- fízou -d//
+		\glb \Neg- \Act.\Opt- buy -\At.\Dir.\Tps{} -\Idr.\Tps{} mailman -\Dir{} \Fps.\Poss.\Ali- bird -\Idr{} \Sps{} -\Ben{} \Dim- market -\Loc//
+		\glft \defn{Hopefully the mailman did not buy my bird for you at the little market.}//
+	\endgl
+\xe
+
+As shown in example \getfullref{ex:prffullgloss}, morpheme glosses are labeled with abbreviations in \textsc{small caps}. A full list of all glossing abbreviations is given on page \pageref{cha:glossary}. A hyphen marks a morpheme boundary within a word that is shared between the text and its gloss, while a period marks a boundary present in only one or the other, including when a single word in the text corresponds to multiple words in its gloss. Finally, clitics are marked with an equals sign.
+
+The \LaTeX{} source code for this grammar and a copy of this PDF are available in a public \href{https://github.com/nai888/tadoni-grammar}{\faGithub~GitHub} repository. Undoubtedly, there will be errors in this document. If you notice any, please feel free to open an issue in the GitHub repository with a description and the location of the error.
+
+\begin{flushright}
+	\makeatletter
+	\textit{\@author}\\
+	\textit{Minneapolis, \DTMdisplaydate{2017}{12}{2}}
+	\makeatother
+\end{flushright}

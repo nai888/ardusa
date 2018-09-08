@@ -1,0 +1,957 @@
+\chapter{Morphology}
+\label{cha:morphology}
+
+Now that \lang{}'s phonology has been defined in \autoref{cha:phonology}, this chapter will discuss the next larger unit of language: morphemes. A morpheme is the smallest meaningful unit in a language. A morpheme can be a root, or it can be another element that affects or modifies the meaning of a root. Further, a morpheme may be freestanding, or it may be bound to other morphemes to form a larger word.
+
+The discussion will begin with a general explanation of \lang{}'s morphological typology. Following this will be a brief summary of the various morphological processes that occur in the language. The chapter will then explore each grammatical category individually and present the specific ways the various morphological processes occur.
+
+\section{Morphological Typology}
+\label{sec:typology}
+\index{morphological typology|(}
+
+Traditional research would show that \lang{} is typologically highly agglutinative, meaning that words may contain many different morphemes that are \enquote{glued} together, with a few fusional tendencies. However, according to Bickel and Nichols, \blockquote{Recent research has shown that such a scale [ranging from isolating to agglutinative to fusional to introflexive] conflates many different typological variables and incorrectly assumes that these parameters covary universally\autocite{Plank-1999,Bickel-and-Nichols-2005}. Three prominent variables involved in this are phonological fusion, formative exponence, and flexivity (i.e. allomorphy, inflectional classes).\autocite{wals-20}} Therefore, we will examine each of these areas---phonological fusion, formative exponence, and flexivity, as well as the degree of synthesis---separately.
+
+\subsection{Phonological Fusion}
+\label{sec:fusion}
+\index{morphological typology!fusion|(}
+
+\lang{}'s phonological formatives are fusional, being \enquote{exclusively concatenative}\autocite{wals-20}. They are phonologically bound, requiring a \enquote{host word} with which they form one single phonological word. This is shown readily on verbs.
+
+\ex<concat-verbs>
+	\begingl
+		\glpreamble\scr{Vínvlovðo.}\\
+		\fw{Vínvlovðo.}\\
+		\phnm{vín\pstrs vlov.ðo}//
+		\gla v- ín- vlov -ð -o//
+		\glb \Pass- \Cond- watch -\Dur{} -\At.\Dir.\Fps//
+		\glft \defn{I would have been watched for a while.}//
+	\endgl
+\xe
+
+Example \getref{concat-verbs} shows how morphemes are attached to the root of a word through prefixes and suffixes, rather than with separate (isolating) modifying words or nonlinear ablaut or tone modifications. This makes it easy to segment each of the formatives into clear-cut morphemes.
+
+\ex<concat-phrase>
+	\begingl
+		\glpreamble\scr{Kóindóvgworkyž mergrevóóná.}\\
+		\fw{Kóindóvgworkyž mergrevóóná.}\\
+		\phnm{\sstrs kó\nsyl{i}n.dóv\pstrs gwor.kyʑ mer\pstrs gre.v\gem{ó}.ná}//
+		\gla k- óin- dóv- gwor -k -y -n mer- grevóó -ná//
+		\glb \Act.\Neg- \Nec- above- float -\Term{} -\Pt.\Dir.\Sps{} -\Idr.\Tpp{} \Fps.\Poss.\Ali- cat -\Idr.\Pl//
+		\glft \defn{You must not stop floating above my cats.}//
+	\endgl
+\xe
+
+Example \getref{concat-phrase} shows how this concatenation occurs also on nouns, similar to verbs.
+
+This concatenation appears not only in inflectional morphology, but also in derivational morphology. For example, the word \defn{cat} in example \getref{concat-phrase} is itself formed from the root verb \scr{grevil} \fw{grevil} \phnm{\pstrs gre.vil} \defn{to stalk} with a nominalizing suffix attached \gloss{\fw{grev}-\Nmz}. Similarly, the word \scr{díríóó} \fw{díríóó} \phnm{\pstrs dí.rí.\gem{ó}} \defn{dog} is formed from the root verb \scr{díríil} \fw{díríil} \phnm{\pstrs dí.r\gem{î}l} \defn{to bark} \gloss{\fw{dírí}-\Nmz}.
+
+\index{morphological typology!fusion|)}
+
+\subsection{Formative Exponence}
+\label{sec:exponence}
+\index{morphological typology!exponence|(}
+
+\lang{} has mostly monoexponential formatives, meaning that, in most cases, morphemes express one grammatical category each\autocite{wals-21}. Example \getref{concat-phrase} includes several inflectional morphemes, most of which are monoexponential.
+
+However, there are some exceptions.
+
+\ex<exponence>
+	\begingl
+		\glpreamble\scr{Kabájima vloveénóír.}\\
+		\fw{Kabájima vloveénóír.}\\
+		\phnm{ka\pstrs bá.ji.ma \pstrs vlo.v\gem{ě}.nó\nsyl{í}r}//
+		\gla k- a- báj -im -a vloveénóí -r//
+		\glb \Act.\Neg- \Ind- pray -\Prg{} -\At.\Dir.\Tps{} photographer -\Ben.\Sg//
+		\glft \defn{S/he is praying for the photographer.}//
+	\endgl
+\xe
+
+Example \getref{exponence} includes five inflectional morphemes attached to the roots \fw{bájil} and \fw{vloveénóí}, three of which are polyexponential. The first, \fw{k-}, both negates the verb and expresses the active voice. Meanwhile, \fw{-a} both signals an agent trigger and indicates that the agent (the direct case) is the third person singular. Finally, the \fw{-r} suffixed to the noun indicates that \defn{photographer} is both singular and in the benefactive case.
+
+\index{morphological typology!exponence|)}
+
+\subsection{Flexivity}
+\label{sec:flexivity}
+\index{morphological typology!flexivity|(}
+
+For the most part, \lang{} displays little flexivity, meaning that, for the most part, words are not divided into separate classes that receive distinct inflectional allomorphs. In almost every case, morphemes will look and behave identically when attached to any two comparable words.
+
+The one exception, where \lang{} \emph{does} display flexivity, is in noun possession\index{possession}\autocite{wals-59}. Nouns indicate possession\index{possession} differently depending on whether it is considered alienable\index{possession!alienable} (separable from the possessor) or inalienable\index{possession!inalienable} (inseparable from the possessor). This difference is lexical, rather than grammatical.
+
+\pex<flexivity-alienable>
+	\index{possession!alienable}
+	\a<poss>\begingl
+		\glpreamble\scr{sustadeé}\\
+		\fw{sustadeé}\\
+		\phnm{sus\pstrs ta.d\gem{ě}}//
+		\gla sus- tadeé -∅//
+		\glb \Tps.\Prox.\Poss.\Ali- microphone -\Dir.\Sg//
+		\glft \defn{his microphone}//
+	\endgl
+	\a<gen>\begingl
+		\glpreamble\scr{tadeé ávyynóíme}\\
+		\fw{tadeé ávyynóíme}\\
+		\phnm{\pstrs ta.d\gem{ě} \pstrs á.v\gem{y}\sstrs nó\nsyl{í}.me}//
+		\gla tadeé -∅ ávyynóí -me//
+		\glb microphone -\Dir.\Sg{} mailman -\Gen.\Sg//
+		\glft \defn{the mailman's microphone}//
+	\endgl
+\xe
+
+Alienable\index{possession!alienable} nouns can be possessed\index{possession} using a possessive prefix\index{affixes!prefixes}, as in example \getfullref{flexivity-alienable.poss}, or by declining the possessor to the genitive\index{noun case!genitive}, as in example \getfullref{flexivity-alienable.gen}. In the latter case, the possessive prefix can be (and usually is) omitted.
+
+\pex<flexivity-inalienable>
+	\a<poss>\begingl
+		\glpreamble\scr{sulímagúu}\\
+		\fw{sulímagúu}\\
+		\phnm{su\pstrs lí.ma.g\gem{û}}//
+		\gla sul- ímagúu -∅//
+		\glb \Tps.\Prox.\Poss.\Inal- nose -\Dir.\Sg//
+		\glft \defn{his nose}//
+		\endgl
+	\a<gen>\begingl
+		\glpreamble\scr{sulímagúu ávyynóíme}\\
+		\fw{sulímagúu ávyynóíme}\\
+		\phnm{su\pstrs lí.ma.g\gem{û} \pstrs á.v\gem{y}\sstrs nó\nsyl{í}.me}//
+		\gla sul- ímagúu -∅ ávyynóí -me//
+		\glb \Tps.\Prox.\Poss.\Inal- nose -\Dir.\Sg{} mailman -\Gen.\Sg//
+		\glft \defn{the mailman's nose}//
+	\endgl
+\xe
+
+Inalienable\index{possession!inalienable} nouns, on the other hand, must always use a possessive\index{possession} prefix\index{affixes!prefixes}, even when the possessor is declined to the genitive\index{noun case!genitive}, as in example \getfullref{flexivity-inalienable.gen}. Notice also that the inalienable possessive prefix \fw{sul-} is different from the alienable possessive prefix \fw{sus-}.
+
+Because possession is mandatory on inalienable nouns, there is a special set of \enquote{indefinite} possessive\index{possession} prefixes\index{affixes!prefixes} that are used when the identity of the possessor is not known.
+
+\ex<flexivity-indefinite>
+	\begingl
+		\glpreamble\scr{latímagúu}\\
+		\fw{latímagúu}\\
+		\phnm{la\pstrs tí.ma.g\gem{û}}//
+		\gla lat- ímagúu -∅//
+		\glb \Tps.\Indf.\Poss.\Inal- nose -\Dir.\Sg//
+		\glft \defn{someone's nose}//
+	\endgl
+\xe
+
+\index{morphological typology!flexivity|)}
+
+\subsection{Synthesis}
+\label{sec:synthesis}
+\index{morphological typology!synthesis|(}
+
+As discussed in \autoref{sec:fusion}, most inflectional and derivational morphology occurs through the addition of prefixes and suffixes, forming singular phonological words. These phonological words are also syntactic words, as the affixes cannot be separated or reordered at all; they can only appear attached to a root, and they must appear in a specific order. This means that \lang{} morphology is synthetic\autocite{wals-22}.
+
+In fact, more than simply synthetic, \lang{} can be described as \emph{polysynthetic}. Verbs can frequently serve as whole sentences on their own, with many inflectional categories attaching to the verb's root. Further, verbs can incorporate and compound with nouns and other words to change or add to their meaning, thus creating very long words.
+
+Verbs agree not only with the grammatical subject but also with the grammatical object. Thus, a single verb can encode information about all core elements within a transitive clause. This means even a relatively simple verb can signify what would be a full sentence in English.
+
+\pex<synthesis-agreement>
+	\a<one>\begingl
+		\glpreamble\scr{Žóýdón.}\\
+		\fw{Žóýdón.}\\
+		\phnm{\pstrs ʑó\nsyl{ý}.dón}//
+		\gla žóýd -ó -n//
+		\glb want -\At.\Dir.\Fpi{} -\Idr.\Tps.\Prox//
+		\glft \defn{We (inclusive) want it.}//
+	\endgl
+	\a<two>\begingl
+		\glpreamble\scr{Trudtov.}\\
+		\fw{Trudtov.}\\
+		\phnm{\pstrs tru\gem{t}ov}//
+		\gla trudt -o -v//
+		\glb thank -\At.\Dir.\Fps{} -\Idr.\Spp//
+		\glft \defn{I thank you (plural).}//
+	\endgl
+\xe
+
+\lang{} also has a very high morpheme-to-word ratio due to the large number of separate grammatical categories that concatenate to the verb root such as polarity and voice, mood, movement, aspect, the trigger, and both the direct (\Dir) and indirect (\Ind) persons and numbers. Each of these categories is indicated with a separate concatenated morpheme. In total, a maximally inflected verb form has a category-per-word value of approximately 8\autocite{wals-22}.
+
+\ex<cpw-ratio>
+	\begingl
+		\glpreamble\scr{Kínlusþronðyn.}\\
+		\fw{Kínlusþronðyn.}\\
+		\phnm{\sstrs kín.lus\pstrs θron.ðyn}//
+		\gla k- ín- lus- þron -ð -y -n//
+		\glb \Neg.\Act- \Cond- toward- walk -\Dur{} -\Pt.\Dir.\Sps{} -\Ind.\Tps.\Prox//
+		\glft \defn{You would not walk toward it for a while.}//
+	\endgl
+\xe
+
+Not only can verbs inflect to become very long, they can also incorporate nouns and compound with other words, making them even longer. See \autoref{cha:compounding-incorporation} for more information about incorporation and compounding.
+
+\ex<cpw-ratio-incorp>
+	\begingl
+		\glpreamble\scr{Kíngruahyygolustadeéþronðy.}\\
+		\fw{Kíngruahyygolustadeéþronðy.}\\
+		\phnm{kín\sstrs gru.a\sstrs h\gem{y}.go.lus\sstrs ta.d\gem{ě}\pstrs θron.ðy}//
+		\gla k- ín- gruahyy -go- lus- tadeé- þron -ð -y//
+		\glb \Neg.\Act- \Cond- doubt -\Com- toward- microphone- walk -\Dur{} -\Pt.\Dir.\Sps{}//
+		\glft \defn{You would not walk skeptically toward the microphone for a while.}//
+	\endgl
+\xe
+
+\index{morphological typology!synthesis|)}
+
+\subsection{Locus of Marking}
+\label{sec:locus-of-marking}
+\index{morphological typology!locus of marking|(}
+
+In various parts of the language, \lang{} shows tendencies toward marking the head, the dependency, both, or neither\autocite{wals-25}.
+
+Clauses tend to be double-marked\index{morphological typology!locus of marking!double} for the core grammatical roles\autocite{wals-23}. Verbs conjugate to indicate both the subject and the object, while the corresponding subject and object nouns are declined with the proper case endings to agree with the verb.
+
+\pex<clause-dbl>
+	\a<one>\begingl
+		\glpreamble\scr{Grevmað grevóó brallóón.}\\
+		\begin{forest} dotted tier
+			[\fw{grevmað}
+				[\fw{Grevmað}]
+				[\fw{grevóó}
+					[\fw{grevóó}]
+				]
+				[\fw{brallóón}
+					[\fw{brallóón.}]
+				]
+			]
+		\end{forest}\index{morphological typology!locus of marking!double}\\
+		\phnm{\pstrs grev.mað \pstrs gre.v\gem{ó} \pstrs bra\gem{l}\gem{ó}n}//
+		\gla grev -m -\textbf{a} -\textbf{ð} grevóó -\textbf{∅} brallóó -\textbf{n}//
+		\glb stalk -\Prg{} -\At.\Dir.\Tps.\Prox{} -\Idr.\Tps.\Obv{} cat -\Dir.\Sg{} bird -\Idr.\Sg{}//
+		\glft \defn{The cat is stalking the bird.}//
+	\endgl
+	\a<two>\begingl
+		\glpreamble\scr{Ýndííná jódpul taððaš bájoít.}\\
+		\begin{forest} dotted tier
+			[\fw{taððaš}
+				[\fw{ýndííná}
+					[\fw{Ýndííná}]
+					[\fw{jódpul}
+						[\fw{jódpul}]
+					]
+				]
+				[\fw{taððaš}]
+				[\fw{bájoít}
+					[\fw{bájoít.}]
+				]
+			]
+		\end{forest}\index{morphological typology!locus of marking!double}\\
+		\phnm{\pstrs ýn.d\gem{í}.ná \pstrs jó\gem{p}ul \pstrs ta\gem{ð}aɕ \pstrs bá.jo\nsyl{í}t}//
+		\gla ýndíí -\textbf{ná} jódp -ul taðð -\textbf{a} -\textbf{š} bájoí -\textbf{t}//
+		\glb totem -\Idr.\Pl{} be.red -\Ptcp{} gather -\At.\Dir.\Tps.\Prox{} -\Idr.\Tpp.\Obv{} priest -\Dir.\Pl//
+		\glft \defn{Red totems, the priests gathered them.}//
+	\endgl
+\xe
+
+In example \getfullref{clause-dbl.one}, the verb \fw{grevil} agrees with both the subject \fw{grevóó} and the object \fw{brallóó}, each of which declines to match the verb. In example \getfullref{clause-dbl.two}, the verb \fw{taððil} agrees with both the subject \fw{bájoí} and the object \fw{ýndíí}, each of which declines to match the verb. Thus, the core roles are double-marked\index{morphological typology!locus of marking!double}.
+
+Other roles within a clause are dependency-marking. In other words, the noun declines to a specific case, but the verb does not conjugate to match it.
+
+\pex<clause-dep>
+	\a<one>\begingl
+		\glpreamble\scr{Tado ávyynééd.}\\
+		\begin{forest} dotted tier
+			[\fw{tado}
+				[\fw{Tado}]
+				[\fw{ávyynééd}
+					[\fw{ávyynééd.}]
+				]
+			]
+		\end{forest}\index{morphological typology!locus of marking!dependency}\\
+		\phnm{\pstrs ta.do \pstrs á.v\gem{y}.n\gem{é}d}//
+		\gla tad -o ávyynéé -\textbf{d}//
+		\glb talk -\At.\Dir.\Fps{} mail.room -\Loc.\Sg//
+		\glft \defn{I talked in the mail room.}//
+	\endgl
+	\a<two>\begingl
+		\glpreamble\scr{Laúnon tráávóire.}\\
+		\begin{forest} dotted tier
+			[\fw{laúnon}
+				[\fw{Laúnon}]
+				[{\elps\fw{mé}}
+					[]
+				]
+				[\fw{tráávóire}
+					[\fw{tráávóire.}]
+				]
+			]
+		\end{forest}\index{morphological typology!locus of marking!dependency}\\
+		\phnm{\pstrs la\nsyl{ú}.non \pstrs tr\gem{á}.vó\nsyl{i}.re}//
+		\gla laún -o -n tráávói -\textbf{re}//
+		\glb buy -\At.\Dir.\Fps{} -\Idr.\Tps.\Prox{} partier -\Ben.\Pl//
+		\glft \defn{I bought it for the partiers.}//
+	\endgl
+\xe
+
+In example \getfullref{clause-dep.one}, the verb \fw{tadil} does not convey any information about where the action is taking place; this is left to the noun \fw{ávyynéé}, which is declined to the locative case\index{noun case!locative}. In example \getfullref{clause-dep.two}, the verb \fw{laúnil} does not convey any information about the benefactor of the action; this is left to the noun \fw{tráávói}, which is declined to the benefactive case\index{noun case!benefactive}.
+
+In many noun phrases, the head is marked\index{morphological typology!locus of marking!head}. An example of this is with numerals, which do not normally decline to match their referent noun.
+
+\ex<np-num>\begingl
+	\glpreamble\scr{mittúut krí}\\
+	\begin{forest} dotted tier
+		[\fw{mittúut}
+			[\fw{mittúut}]
+			[\fw{krí}
+				[\fw{krí}]
+			]
+		]
+	\end{forest}\index{morphological typology!locus of marking!head}\\
+	\phnm{\pstrs mi\eje{t}\gem{û}t krí}//
+	\gla mittúu -\textbf{t} krí//
+	\glb pen -\Dir.\Pl{} two//
+	\glft \defn{two pens}//
+	\endgl
+\xe
+
+In example \getfullref{np-num}, the head noun \fw{mittúu} is marked as plural, while the dependent numeral \fw{krí} is unmarked.
+
+\index{possession|(}
+
+Possession\index{possession} can be dependency-marked\index{morphological typology!locus of marking!dependency}, double-marked\index{morphological typology!locus of marking!double}, or head-marked\index{morphological typology!locus of marking!head}, depending on the situation\autocite{wals-24}. Head-marking\index{morphological typology!locus of marking!head} allows for the omission of the possessor. This is common anytime the possessor is known. When the possessor is not omitted, though, it is normal to mark the dependency\index{morphological typology!locus of marking!dependency}. Since inalienable\index{possession!inalienable} possessions must be marked, such possession is double-marked\index{morphological typology!locus of marking!double} when the possessor is not omitted. With alienable\index{possession!alienable} possession, double-marking\index{morphological typology!locus of marking!double} is only used for emphasis or clarification.
+
+\pex<poss-mk-ali>
+	\a<dep>\begingl
+		\glpreamble\scr{laúnou gehonkoíme}\\
+		\begin{forest} dotted tier
+			[\fw{laúnou}
+				[\fw{laúnou}]
+				[\fw{gehonkoíme}
+					[\fw{gehonkoíme}]
+				]
+			]
+		\end{forest}\index{morphological typology!locus of marking!dependency}\\
+		\phnm{\pstrs la\nsyl{ú}.no\nsyl{u} \pstrs ge.hon\sstrs ko\nsyl{í}.me}//
+		\gla laúnou -∅ gehonkoí -\textbf{me}//
+		\glb store -\Dir.\Sg{} smoker -\Gen.\Sg//
+		\glft \defn{the smoker's store}//
+	\endgl
+	\a<head>\begingl
+		\glpreamble\scr{suslaúnou}\\
+		\fw{suslaúnou}\index{morphological typology!locus of marking!head}\\
+		\phnm{sus\pstrs la\nsyl{ú}.no\nsyl{u}}//
+		\gla \textbf{sus}- laúnou -∅//
+		\glb \Tps.\Prox.\Poss.\Ali- store -\Dir.\Sg//
+		\glft \defn{his/her store}//
+	\endgl
+	\a<double>\begingl
+		\glpreamble\scr{suslaúnou gehonkoíme}\\
+		\begin{forest} dotted tier
+			[\fw{suslaúnou}
+				[\fw{suslaúnou}]
+				[\fw{gehonkoíme}
+					[\fw{gehonkoíme}]
+				]
+			]
+		\end{forest}\index{morphological typology!locus of marking!double}\\
+		\phnm{sus\pstrs la\nsyl{ú}.no\nsyl{u} \pstrs ge.hon\sstrs ko\nsyl{í}.me}//
+		\gla \textbf{sus}- laúnou -∅ gehonkoí -\textbf{me}//
+		\glb \Tps.\Prox.\Poss.\Ali- store -\Dir.\Sg{} smoker -\Gen.\Sg//
+		\glft \defn{his, the smoker's, store}//
+	\endgl
+\xe
+
+Example \getfullref{poss-mk-ali.dep} shows the normal way to mark alienable possession\index{possession!alienable}. The head noun \fw{laúnou} is unmarked, while the dependent noun \fw{gehonkoí} is declined to the genitive case\index{noun case!genitive}. Example \getfullref{poss-mk-ali.head} shows how the head noun \fw{laúnou} can be marked, allowing for the dependent noun (the possessor) to be completely omitted. Example \getfullref{poss-mk-ali.double} is an example of double-marking alienable possession\index{possession!alienable}; the head noun \fw{laúnou} is marked as possessed \emph{and} the dependent noun \fw{gehonkoí} is declined to the genitive case\index{noun case!genitive}. This double marking is relatively rare, and is only used for clarification or emphasis.
+
+\pex<poss-mk-inal>
+	\a<double>\begingl
+		\glpreamble\scr{sulvlovíí gehonkoíme}\\
+		\begin{forest} dotted tier
+			[\fw{sulvlovíí}
+				[\fw{sulvlovíí}]
+				[\fw{gehonkoíme}
+					[\fw{gehonkoíme}]
+				]
+			]
+		\end{forest}\index{morphological typology!locus of marking!double}\\
+		\phnm{sul\pstrs vlo.v\gem{í} \pstrs ge.hon\sstrs ko\nsyl{í}.me}//
+		\gla \textbf{sul}- vlovíí -∅ gehonkoí -\textbf{me}//
+		\glb \Tps.\Prox.\Poss.\Inal- eye -\Dir.\Sg{} smoker -\Gen.\Sg//
+		\glft \defn{the smoker's eye}//
+	\endgl
+	\a<head>\begingl
+		\glpreamble\scr{sulvlovíí}\\
+		\fw{sulvlovíí}\index{morphological typology!locus of marking!head}\\
+		\phnm{sul\pstrs vlo.v\gem{í}}//
+		\gla \textbf{sul}- vlovíí -∅//
+		\glb \Tps.\Prox.\Poss.\Inal- eye -\Dir.\Sg//
+		\glft \defn{his/her eye}//
+	\endgl
+\xe
+
+In examples \getfullref{poss-mk-inal.double}--\getref{poss-mk-inal.head}, the head noun \fw{-vlovíí} is inalienable\index{possession!inalienable} and cannot occur without a possessive prefix. In example \getfullref{poss-mk-inal.double}, possession is thus double-marked\index{morphological typology!locus of marking!double}, with the dependent noun \fw{gehonkoí} declining to the genitive case\index{noun case!genitive}. In example \getfullref{poss-mk-inal.head}, the dependent noun is omitted, so only the head noun is marked for possession\index{morphological typology!locus of marking!head}.
+
+\index{possession|)}
+\index{relative clause|(}
+
+In relative clauses, the relative pronoun is dependent upon the noun it refers to. Grammatical case is marked on the head noun\index{morphological typology!locus of marking!head}, since the relative pronoun declines to indicate its role within the subordinate clause, while grammatical number is marked on both\index{morphological typology!locus of marking!double}, since the relative pronoun agrees with the number of its referent in the matrix clause.
+
+\pex<rel-mk>
+	\a<sg-core>\begingl
+		\glpreamble\scr{Ðýsmon tedkóón terta vlovet.}\\
+		\begin{forest} dotted tier
+			[\fw{ðýsmon}
+				[\fw{Ðýsmon}]
+				[{\elps\fw{mé}}
+					[]
+				]
+				[\fw{tedkóón}
+					[\fw{tedkóón},name=matrix]
+					[\fw{terta}
+						[\fw{terta},name=relative]
+						[\fw{vlovet}
+							[\fw{vlovet.}]
+							[{\elps\fw{tedkóó}}
+								[,name=subord]
+							]
+							[{\elps\fw{mén}}
+								[]
+							]
+						]
+					]
+				]
+			]
+			\draw[<->] (relative.255) --+(0,-0.5em) -| node[near start,below]{\tiny \Sg{} agreement} (matrix.south);
+			\draw[<->] (relative.285) --+(0,-0.5em) -| node[near start,below]{\tiny \Dir{} agreement} (subord.south);
+		\end{forest}\index{morphological typology!locus of marking!head}\index{morphological typology!locus of marking!double}\\
+		\phnm{\pstrs ðýs.mon \pstrs te\gem{k}\gem{ó}n \pstrs ter.ta \pstrs vlo.vet}//
+		\gla ðýs -m -o -\textbf{n} tedkóó -\textbf{n} ter -ta vlov -e -t//
+		\glb seek -\Prg{} -\At.\Dir.\Fps{} -\Idr.\Tps.\Prox{} hawk -\Idr.\Sg{} \Rrel{} -\Dir.\Sg{} see -\Pt.\Dir.\Tps.\Prox{} -\Idr.\Fps//
+		\glft \defn{I am seeking the hawk that I saw.}//
+	\endgl
+	\a<pl-oblique>\begingl
+		\glpreamble\scr{Vlovjoš díríóóná sorgá ðýson.}\\
+		\begin{forest} dotted tier
+			[\fw{vlovjoš}
+				[\fw{Vlovjoš}]
+				[{\elps\fw{mé}}
+					[]
+				]
+				[\fw{díríóóná}
+					[\fw{díríóóná},name=matrix]
+					[\fw{sorgá}
+						[\fw{sorgá},name=relative]
+						[\fw{ðýson}
+							[\fw{ðýson.}]
+							[{\elps\fw{mé}}
+								[]
+							]
+							[{\elps\fw{tedkóón}}
+								[]
+							]
+							[{\elps\fw{díríóógá}}
+								[,name=subord]
+							]
+						]
+					]
+				]
+			]
+			\draw[<->] (relative.255) --+(0,-0.5em) -| node[near start,below]{\tiny \Pl{} agreement} (matrix.south);
+			\draw[<->] (relative.285) --+(0,-0.5em) -| node[near start,below]{\tiny \Com{} agreement} (subord.south);
+		\end{forest}\index{morphological typology!locus of marking!head}\index{morphological typology!locus of marking!double}\\
+		\phnm{\pstrs vlov.joɕ \pstrs dí.rí\sstrs \gem{ó}.ná \pstrs sor.gá \pstrs ðý.son}//
+		\gla vlov -j -o -š díríóó -ná sor -gá ðýs -o -n//
+		\glb see -\Cnt{} -\At.\Dir.\Fps{} -\Idr.\Tpp.\Obv{} dog -\Idr.\Pl{} \Nrrel{} -\Com.\Pl{} seek -\At.\Dir.\Fps{} -\Idr.\Tps.\Prox//
+		\glft \defn{I am still watching the dogs, with which I sought it (the hawk).}//
+	\endgl
+\xe
+
+In example \getfullref{rel-mk.sg-core}, the restrictive relative pronoun \fw{ter} agrees in number with its referent \fw{tedkóó} in the matrix clause\index{morphological typology!locus of marking!double}, where it is singular, and agrees in case with its referent in the subordinate clause\index{morphological typology!locus of marking!head}, where it is in the direct case\index{noun case!direct}. In example \getfullref{rel-mk.pl-oblique}, the non-restrictive relative pronoun \fw{sor} agrees in number with its referent \fw{díríóó} in the matrix clause\index{morphological typology!locus of marking!double}, where it is plural, and agrees in case with its referent in the subordinate clause\index{morphological typology!locus of marking!head}, where it is in the comitative case\index{noun case!comitative}.
+
+\index{relative clause|)}
+
+\lang{} has no pure adjectives, instead conjugating adjectival verbs into the second infinitive, or participle, form. Since these verbs are not finite, they do not indicate the role of the noun they modify. Therefore, they are tied to the noun they modify only by proximity, not by agreement. The declension of the modified noun will not affect the participle, and the presence of the participle will not affect the declension of the modified noun. In other words, such a construction marks neither the head nor the dependency\index{morphological typology!locus of marking!unmarked}.
+
+\pex<ptcp-mk>
+	\a<one>\begingl
+		\glpreamble\scr{dósjái ðovlovul}\\
+		\begin{forest} dotted tier
+			[\fw{dósjái}
+				[\fw{dósjái}]
+				[\fw{ðovlovul}
+					[\fw{ðovlovul}]
+				]
+			]
+		\end{forest}\index{morphological typology!locus of marking!unmarked}\\
+		\phnm{\pstrs dós.já\nsyl{i} \pstrs ðov.lo.vul}//
+		\gla dósjái -∅ ðovlov -ul//
+		\glb miracle -\Dir.\Sg{} be.visible -\Ptcp//
+		\glft \defn{the visible miracle}//
+	\endgl
+	\a<two>\begingl
+		\glpreamble\scr{vítkoráuþá tráávul}\\
+		\begin{forest} dotted tier
+			[\fw{vítkoráuþá}
+				[\fw{vítkoráuþá}]
+				[\fw{tráávul}
+					[\fw{tráávul}]
+				]
+			]
+		\end{forest}\index{morphological typology!locus of marking!unmarked}\\
+		\phnm{ví\pstrs\eje{k}o.rá\nsyl{u}.θá \pstrs tr\gem{á}.vul}//
+		\gla vít- koráu -þá trááv -ul//
+		\glb \Fpi.\Poss.\Inal- child -\Cau.\Pl{} party -\Ptcp//
+		\glft \defn{because of our partying children}//
+	\endgl
+\xe
+
+\index{morphological typology!locus of marking|)}
+\index{morphological typology|)}
+
+\section{Morphological Processes}
+\label{sec:morphological-processes}
+
+With \lang{} being so highly fusional (see \autoref{sec:fusion}) and synthetic (see \autoref{sec:synthesis}), nearly all morphology takes place by the addition of prefixes and suffixes\index{affixes}.
+
+Using Dryer's method for calculating an affixing index\autocite{wals-26}, we see that \lang{} has an approximately equal amount of suffixing and prefixing\index{affixes}. In fact, although a larger number of categories are marked using prefixes, the weighted importance of the case affixes on nouns, the pronominal subject affixes on verbs, and the aspect affixes on verbs means that \lang{} shows a very slight preference for suffixes, with a suffixing index of 57\%\index{affixes}.\footnote{I actually used a modified version of Dryer's method. Using Dryer's method without modification, \lang{} actually has a suffixing index of 73\%, giving it a much stronger preference for suffixes, but Dryer's method excluded three categories that are marked as prefixes on \lang{} verbs, including voice, mood, and movement. Assigning these three categories one point each gave the result identified above.}
+
+\begin{figure}[h]\centering
+	\index{affixes}\index{affixes!prefixes}\index{affixes!suffixes}
+	\caption{Inflectional Affixing Index}
+	\label{fig:affixing-index}
+	\begin{tabu} {X[l] | X[l]}
+		\toprule
+		Prefixes & Suffixes\\
+		\midrule
+		+1: pronominal possessive affixes on nouns & +2: case affixes on nouns\\
+		+1: negative affixes on verbs & +2: pronominal subject affixes on verbs\\
+		+1: interrogative affixes on verbs & +2: aspect affixes on verbs\\
+		+1: voice affixes on verbs & +1: plural affixes on nouns\\
+		+1: mood affixes on verbs & +1: pronominal object affixes on verbs\\
+		+1: movement affixes on verbs & \\
+		\midrule
+		6 = 43\% & 8 = 57\%\\
+		\bottomrule
+	\end{tabu}
+\end{figure}
+
+Of course, this affixing\index{affixes} index only measures inflectional morphology, and does not include derivational morphology. While \lang{}'s inflectional morphology shows a slight tendency toward suffixing, its derivational morphology actually shows a slight tendency toward prefixing. See \autoref{cha:derivation} for more information.
+
+Reduplication\index{reduplication} is relatively rare in \lang{}, and is not productive. It is only used in the derivational morphology of certain kinship terms\index{kinship}, particularly with grandparents and grandchildren. This reduplication is partial\autocite{wals-27}, repeating only the first syllable of the word.
+
+\pex<reduplication>
+	\a<mother>\index{kinship}\begingl
+		\gla \scr{júói} → \scr{jújúói}//
+		\glb \fw{júói} {} \fw{jújúói}//
+		\glb \phnm{\pstrs jú.ó\nsyl{i}} {} \phnm{\pstrs jú.jú.ó\nsyl{i}}//
+		\glb \defn{mother} {} \defn{grandmother}//
+	\endgl
+	\a<father>\index{kinship}\begingl
+		\gla \scr{uutói} → \scr{utuutói}//
+		\glb \fw{uutói} {} \fw{utuutói}//
+		\glb \phnm{\pstrs \gem{u}.tó\nsyl{i}} {} \phnm{\pstrs u.t\gem{u}.tó\nsyl{i}}//
+		\glb \defn{father} {} \defn{grandfather}//
+	\endgl
+	\a<daughter>\index{kinship}\begingl
+		\gla \scr{lárrói} → \scr{lálárrói}//
+		\glb \fw{lárrói} {} \fw{lálárrói}//
+		\glb \phnm{\pstrs lá\gem{r}ó\nsyl{i}} {} \phnm{\pstrs lá.lá\gem{r}ó\nsyl{i}}//
+		\glb \defn{daughter} {} \defn{granddaughter}//
+	\endgl
+	\a<son>\index{kinship}\begingl
+		\gla \scr{zohiói} → \scr{zozohiói}//
+		\glb \fw{zohiói} {} \fw{zozohiói}//
+		\glb \phnm{\pstrs zo.hi.ó\nsyl{i}} {} \phnm{\pstrs zo.zo\sstrs hi.ó\nsyl{i}}//
+		\glb \defn{son} {} \defn{grandson}//
+	\endgl
+\xe
+
+From an inflectional standpoint, \lang{} does not include any clitics. However, some derivational morphology does take place using clitics. Again, see \autoref{cha:derivation} for more information.
+
+\section{Grammatical Categories}
+\label{sec:gram-cats}
+
+\lang{} words can be divided into several different parts of speech. While the previous sections of this chapter have dealt with the general mechanisms of marking words, this section will examine each of the various parts of speech in order to define their morphology more closely. The discussion will begin with an examination of nouns and pronouns. The section will then focus on verbs, which are the main carriers of meaning in \lang{}, often serving as whole sentences unto themselves due to their high level of inflection, compounding, and incorporation. Following this will be a discussion of the remaining parts of speech, including adverbs, numerals, and conjunctions.
+
+\subsection{Nouns}
+\label{sec:nouns}
+
+\lang{} includes both common nouns and proper nouns (i.e. names). Most nouns, both common and proper, are actually nominalizations derived from verbs or verb phrases. Nouns are not divided into grammatical genders\autocite{wals-30}. The only grammatical properties nouns display are number and the case assigned to them by the verb depending on their role within the clause. Nouns display no syncretism in case marking or number; all declensional forms are unique\autocite{wals-28}.
+
+\begin{table}\centering
+	\index{noun case}
+	\caption{Noun Declensions}
+	\label{tab:noun-declensions}
+	\begin{tabu} to \textwidth {| r | l l |}
+		\toprule
+		     & \Sg   & \Pl\\
+		\midrule
+		\Dir & \fw{-}     & \fw{-t(a)}\\
+		\Idr & \fw{-n(e)} & \fw{-ná}\\
+		\Voc & \fw{-v(i)} & \fw{-vé}\\
+		\Gen & \fw{-me}   & \fw{-mu}\\
+		\Dat & \fw{-s(é)} & \fw{-sá}\\
+		\Loc & \fw{-d(á)} & \fw{-do}\\
+		\Lat & \fw{-ké}   & \fw{-ku}\\
+		\All & \fw{-ba}   & \fw{-bú}\\
+		\Abl & \fw{-le}   & \fw{-ló}\\
+		\Pro & \fw{-po}   & \fw{-pí}\\
+		\Ins & \fw{-ž(ó)} & \fw{-žý}\\
+		\Ben & \fw{-r(a)} & \fw{-re}\\
+		\Cau & \fw{-þ(o)} & \fw{-þá}\\
+		\Com & \fw{-go}   & \fw{-gá}\\
+		\Prv & \fw{-fí}   & \fw{-fo}\\
+		\bottomrule
+	\end{tabu}
+\end{table}
+
+\subsubsection{Case}
+\label{sec:noun-case}
+\index{noun case|(}
+
+\lang{} nouns decline into one of 15 possible grammatical cases, as shown in \autoref{tab:noun-declensions}. The noun's case determines its role within the clause, as governed by the verb at the head of the clause.
+
+Since the terms \enquote*{subject} and \enquote*{object} are so often conflated with case role incorrectly, these terms are not sufficient in describing roles. Further, \lang{}'s two core cases are not reliable indicators of the agent and patient of a verb's action on their own, so terms such as \enquote*{nominative} and \enquote*{accusative}, \enquote*{ergative} and \enquote*{absolutive}, and \enquote*{agentive} and \enquote*{patientive} are inadequate. \lang{} displays similarities to the triggering languages of Austronesian, or Philippine-type, alignment, and also to languages with fluid alignment. Roles are marked according to the semantic meaning of verbs, similar to active--stative languages, but in many situations this is fluid. The specific alignment is signaled using a trigger on the verb, similar to Austronesian alignment. Therefore, the two core cases are named direct and indirect.
+
+\paragraph{Direct}
+\index{noun case!direct|(}
+
+The direct case marks a noun that, generally, is the subject of the verb.
+
+In clauses where the verb is marked with the agent trigger, the direct case is similar to the nominative and marks the agent or instigator of the verb. With intransitive verbs, this role is the subject, the agent or experiencer, of the verb. With transitive verbs, this role is the agent, actor, or instigator of the action.
+
+\pex<case-direct-at>
+	\a<intr>\begingl
+		\glpreamble\scr{Brallá tedkóót.}\\
+		\fw{Brallá tedkóót.}\\
+		\phnm{\pstrs bra\gem{l}á \pstrs te\gem{k}\gem{ó}t}//
+		\gla brall -\textbf{á} tedkóó -\textbf{t}//
+		\glb fly -\At.\Dir.\Tpp.\Prox{} hawk -\Dir.\Pl//
+		\glft \defn{The hawks fly.}//
+	\endgl
+	\a<tran>\begingl
+		\glpreamble\scr{Fízmaš dwénsói ímagózná.}\\
+		\fw{Fízmaš dwénsói ímagózná.}\\
+		\phnm{\pstrs fíz.maɕ \pstrs dwén.só\nsyl{i} \pstrs í.ma\sstrs góz.ná}//
+		\gla fíz -m -\textbf{a} -š dwénsói -\textbf{∅} ímagóz -ná//
+		\glb sell -\Prg{} -\At.\Dir.\Tps.\Prox{} -\Idr.\Tpp.\Obv{} tall.person -\Dir.\Sg{} perfume -\Idr.\Pl//
+		\glft \defn{The tall person is selling perfumes.}//
+	\endgl
+\xe
+
+In clauses where the verb is marked with the patient trigger, the direct case is similar to the absolutive and marks the patient or experiencer of the verb. With intransitive verbs, this role is the subject, the patient or experiencer, of the verb. With transitive verbs, this role is the patient, experiencer, or receiver of the action.
+
+\pex<case-direct-pt>
+	\a<intr>\begingl
+		\glpreamble\scr{Foine hoojoí.}\\
+		\fw{Foine hoojoí.}\\
+		\phnm{\pstrs fo\nsyl{i}.ne \pstrs h\gem{o}.jo\nsyl{í}}//
+		\gla foin -\textbf{e} hoojoí -\textbf{∅}//
+		\glb be.short -\Pt.\Dir.\Tps.\Prox{} trader -\Dir.\Sg//
+		\glft \defn{The trader is short.}//
+		\endgl
+	\a<tran>\begingl
+		\glpreamble\scr{Ímagizéð ávyynóít tírdíríóón.}\\
+		\fw{Ímagizéð ávyynóít tírdíríóón.}\\
+		\phnm{\pstrs í.mag\sstrs i.zéð \pstrs á.v\gem{y}.nó\nsyl{í}t \pstrs tírdí\sstrs rí.\gem{ó}n}//
+		\gla ímag -iz -\textbf{é} -ð ávyynóí -\textbf{t} tírdíríóó -n//
+		\glb smell -\Gno{} -\Pt.\Dir.\Tps.\Prox{} -\Idr.\Tpp.\Obv{} mailman -\Dir.\Pl{} puppy -\Idr.\Sg//
+		\glft \defn{The puppy smells mailmen.}//
+	\endgl
+\xe
+
+\index{noun case!direct|)}
+
+\paragraph{Indirect}
+\index{noun case!indirect|(}
+
+The indirect case marks a noun that, generally, is the object of the verb. The indirect case will only be used with transitive verbs.
+
+In clauses where the verb is marked with the agent trigger, the indirect case is similar to the accusative and marks the patient, experiencer, or receiver of the action.
+
+\ex<case-indirect-at>
+	\begingl
+		\glpreamble\scr{Žóýdað fryýnáitwói vloveén.}\\
+		\fw{Žóýdað fryýnáitwói vloveén.}\\
+		\phnm{\pstrs žó\nsyl{ý}.dað \pstrs fr\gem{y̌}.ná\nsyl{i}t.wó\nsyl{i} \pstrs vlo.v\gem{ě}n}//
+		\gla žóýd -a -\textbf{ð} fryýnáitwói -∅ vloveé -\textbf{n}//
+		\glb want -\At.\Dir.\Tps.\Prox{} -\Idr.\Tps.\Obv{} interrogator -\Dir.\Sg{} camera -\Idr.\Sg//
+		\glft \defn{The interrogator wanted a camera.}//
+	\endgl
+\xe
+
+In clauses where the verb is marked with the patient trigger, the indirect case is similar to the ergative and marks the agent, actor, or instigator of the action.
+
+\ex<case-indirect-pt>
+	\begingl
+		\glpreamble\scr{Grianeš fluáu latkárkoráuná.}\\
+		\fw{Grianeš fluáu latkárkoráuná.}\\
+		\phnm{\pstrs gri.a.neɕ \pstrs flu.á\nsyl{u} la\pstrs\eje{k}ár.ko\sstrs rá\nsyl{u}.ná}//
+		\gla grian -e -\textbf{š} fluáu -∅ lat- kárkoráu -\textbf{ná}//
+		\glb break -\Pt.\Dir.\Tps.\Prox{} -\Idr.\Tpp.\Obv{} gift -\Dir.\Sg{} \Tps.\Indf.\Poss.\Inal- twin -\Idr.\Pl//
+		\glft \defn{Someone's twins broke the gift.}//
+	\endgl
+\xe
+
+\index{noun case!indirect|)}
+
+\paragraph{Vocative}
+\index{noun case!vocative|(}
+
+The vocative case is used to identify the noun (usually a person) being addressed by a statement. It sets forth the identity of the addressee explicitly within a sentence.
+
+\pex<case-voc>
+	\a<nonvoc>\begingl
+		\glpreamble\scr{Žaárgron Ðýsaóin.}\\
+		\fw{Žaárgron Ðýsaóin.}\\
+		\phnm{\pstrs ž\gem{ǎ}r.gron \pstrs ðý.sa.ó\nsyl{i}n}//
+		\gla žaár -gr -o -n Ðýsaói -n//
+		\glb meet -\Rtsp{} -\At.\Dir.\Fps{} -\Idr.\Tps.\Prox{} Ðýsaói -\Dir.\Sg//
+		\glft \defn{I have not met Ðýsaói.}//
+	\endgl
+	\a<voc>\begingl
+		\glpreamble\scr{Žaárgron Ðýsaóiv.}\\
+		\fw{Žaárgron Ðýsaóiv.}\\
+		\phnm{\pstrs ž\gem{ǎ}r.gron \pstrs ðý.sa.ó\nsyl{i}v}//
+		\gla žaár -gr -o -n Ðýsaói -v//
+		\glb meet -\Rtsp{} -\At.\Dir.\Fps{} -\Idr.\Tps.\Prox{} Ðýsaói -\Voc.\Sg//
+		\glft \defn{I have not met him/her, Ðýsaói.}//
+	\endgl
+\xe
+
+Notice that in example \getfullref{case-voc.nonvoc}, where \fw{Ðýsaói} is declined to the direct case\index{noun case!direct}, \fw{Ðýsaói} plays a semantic role within the clause, being the person who has not been met. On the other hand, in example \getfullref{case-voc.voc}, where \fw{Ðýsaói} is declined to the vocative case, \fw{Ðýsaói} has no semantic role within the clause, rather being identified as the person being addressed.
+
+\index{noun case!vocative|)}
+
+\paragraph{Genitive}
+\index{noun case!genitive|(}
+
+The genitive case is used to identify the possessor of another noun. In other words, the genitive declension turns a noun into a modifier of another noun, rather than giving it a set role within the clause.
+
+As with other modifiers, the genitive noun normally follows the noun it modifies. For further discussion of word order, see \autoref{cha:syntax}.
+
+\pex<case-gen>
+	\a<one>\begingl
+		\glpreamble\scr{bralleé mettotoóbóime}\\
+		\fw{bralleé mettotoóbóime}\\
+		\phnm{\pstrs bra\gem{l}\gem{ě} me\pstrs \eje{t}o.t\gem{ǒ}\sstrs bó\nsyl{i}.me}//
+		\gla bralleé -∅ met- totoóbói -me//
+		\glb airplane -\Dir.\Sg{} \Fps.\Poss.\Inal- uncle -\Gen.\Sg//
+		\glft \defn{my uncle's airplane}//
+	\endgl
+	\a<two>\begingl
+		\glpreamble\scr{Sérron guníaan kalnáatóime Állýýsme.}\\
+		\fw{Sérron guníaan kalnáatóime Állýýsme.}\\
+		\phnm{\pstrs sé\gem{r}on \pstrs gu.ní.\gem{a}n kal\pstrs n\gem{â}.tó\nsyl{i}.me \pstrs á\gem{l}\gem{ý}s.me}//
+		\gla sérr -o -n guníaa -n kal- náatói -me Állýýs -me//
+		\glb ride -\At.\Dir.\Fps{} -\Idr.\Tps.\Prox{} horse -\Idr.\Sg{} \Tps.\Obv.\Poss.\Inal- sister -\Gen.\Sg{} Állýýs -\Gen.\Sg//
+		\glft \defn{I rode Állýýs' sister's horse.}//
+	\endgl
+\xe
+
+Note how multiple genitive constructions can be stacked atop each other, as in example \getfullref{case-gen.two}. The horse in the example sentence is owned by someone's sister, that person being the sister of \fw{Állýýs}. This example also demonstrates how the genitive does not necessarily always indicate physical possession, but also association or belonging, such as the relationship between siblings.
+
+\index{noun case!genitive|)}
+
+\paragraph{Dative}
+\index{noun case!dative|(}
+
+The dative case is used to indicate the indirect object of the verb. Oftentimes this indicates the recipient of a verb that isn't marked with one of the core classes on the verb itself.
+
+\ex<case-dat>
+	\begingl
+		\glpreamble\scr{Fluað susvlovúu tos.}\\
+		\fw{Fluað susvlovúu tos.}\\
+		\phnm{\pstrs flu.að sus\pstrs vlo.v\gem{û} tos}//
+		\gla flu -a -ð sus- vlovúu -∅ to -s//
+		\glb give -\At.\Dir.\Tps.\Prox{} -\Idr.\Tps.\Obv{} \Tps.\Prox.\Poss.\Ali- eyeglasses -\Dir.\Sg{} \Sps{} -\Dat//
+		\glft \defn{He gave his eyeglasses to you.}//
+	\endgl
+\xe
+
+This arises any time a transitive verb is conjugated to the causative voice, increasing its valency, or to the antipassive voice while still stating the omitted patient of the action. For more information about verb voices, see \autoref{sec:verb-voice}.
+
+\pex<case-dat-voice>
+	\a<causative>\begingl
+		\glpreamble\scr{Mafluon susvlovúus tos.}\\
+		\fw{Mafluon susvlovúus tos.}\\
+		\phnm{ma\pstrs flu.on sus\pstrs vlo.v\gem{û}s tos}//
+		\gla ma- flu -o -n sus- vlovúu -s to -s//
+		\glb \Caus- give -\At.\Dir.\Fps{} -\Idr.\Tps.\Prox{} \Tps.\Prox.\Poss.\Ali- eyeglasses -\Dat.\Sg{} \Sps{} -\Dat//
+		\glft \defn{I made him give his eyeglasses to you.}//
+	\endgl
+	\a<atap>\begingl
+		\glpreamble\scr{Sevgebrétka ávaýs.}\\
+		\fw{Sevgebrétka ávaýs.}\\
+		\phnm{\sstrs sev.ge\pstrs bré.\eje{k}a \pstrs á.va\nsyl{ý}s}//
+		\gla s- ev- gebrétk -a ávaý -s//
+		\glb \Antip- \Opt- burn -\At.\Dir.\Tps.\Prox{} mail -\Dat.\Sg//
+		\glft \defn{Hopefully he burned it, the piece of mail.}//
+	\endgl
+	\a<ptap>\begingl
+		\glpreamble\scr{Sageþrone díríóósá.}\\
+		\fw{Sageþrone díríóósá.}\\
+		\phnm{sa\pstrs geθ.ro.ne \pstrs dí.rí\sstrs\gem{ó}.sá}//
+		\gla sa- geþron -e díríóó -sá//
+		\glb \Antip- walk -\Pt.\Dir.\Tps.\Prox{} dog -\Dat.\Pl//
+		\glft \defn{He walked them, the dogs.}//
+	\endgl
+\xe
+
+\index{noun case!dative|)}
+
+\paragraph{Locative}
+\index{noun case!locative|(}
+
+Locative
+
+\index{noun case!locative|)}
+
+\paragraph{Lative}
+\index{noun case!lative|(}
+
+Lative
+
+\index{noun case!lative|)}
+
+\paragraph{Allative}
+\index{noun case!allative|(}
+
+Allative
+
+\index{noun case!allative|)}
+
+\paragraph{Ablative}
+\index{noun case!ablative|(}
+
+Ablative
+
+\index{noun case!ablative|)}
+
+\paragraph{Prolative}
+\index{noun case!prolative|(}
+
+Prolative
+
+\index{noun case!prolative|)}
+
+\paragraph{Instrumental}
+\index{noun case!instrumental|(}
+
+Instrumental
+
+\index{noun case!instrumental|)}
+
+\paragraph{Benefactive}
+\index{noun case!benefactive|(}
+
+Benefactive
+
+\index{noun case!benefactive|)}
+
+\paragraph{Causal}
+\index{noun case!causal|(}
+
+Causal
+
+\index{noun case!causal|)}
+
+\paragraph{Comitative}
+\index{noun case!comitative|(}
+
+Comitative
+
+\index{noun case!comitative|)}
+
+\paragraph{Privative}
+\index{noun case!privative|(}
+
+Privative
+
+\index{noun case!privative|)}
+\index{noun case|)}
+
+\subsubsection{Number}
+\label{sec:noun-number}
+
+Noun numbers
+
+\subsection{Pronouns and Determiners}
+\label{sec:pronouns-determiners}
+
+Pronouns
+
+\subsubsection{Personal}
+\label{sec:pn-personal}
+
+Personal pronouns
+
+\subsubsection{Demonstratives}
+\label{sec:pn-demonstratives}
+
+Demonstratives
+
+\subsubsection{Interrogatives}
+\label{sec:pn-interrogatives}
+
+Interrogatives
+
+\subsubsection{Indefinites}
+\label{sec:pn-indefinites}
+
+Indefinites
+
+\subsubsection{Relatives}
+\label{sec:pn-relatives}
+
+Relatives
+
+\subsubsection{Reflexives and Reciprocals}
+\label{sec:pn-reflexives-reciprocals}
+
+Reflexives and reciprocals
+
+\subsection{Verbs}
+\label{sec:verbs}
+
+Verbs display no syncretism in verbal person/number marking\autocite{wals-29} (add more detail).
+
+\subsubsection{Infinitives}
+\label{sec:verb-infinitives}
+
+Infinitives
+
+\subsubsection{Polarity}
+\label{sec:verb-polarity}
+
+Polarity
+
+\subsubsection{Voice}
+\label{sec:verb-voice}
+
+Voice
+
+\subsubsection{Mood}
+\label{sec:verb-mood}
+
+Mood
+
+\subsubsection{Motion}
+\label{sec:verb-motion}
+
+Motion
+
+\subsubsection{Aspect}
+\label{sec:verb-aspect}
+
+Aspect
+
+\subsubsection{Pronominal}
+\label{sec:verb-pronominals}
+
+Pronominals
+
+\subsection{Adverbs}
+\label{sec:adverbs}
+
+Adverbs
+
+\subsection{Numerals}
+\label{sec:numerals}
+
+Numerals
+
+\subsection{Conjunctions}
+\label{sec:conjunctions}
+
+Conjunctions

@@ -1,0 +1,389 @@
+\documentclass[12pt,letterpaper,openany,twoside]{memoir}
+
+\setlrmarginsandblock{1in}{1in}{*}
+\setulmarginsandblock{1in}{1in}{*}
+\checkandfixthelayout 
+
+% Layouts
+\usepackage{afterpage}
+\usepackage{multicol}
+\usepackage{rotating}
+\usepackage{longtable}
+\usepackage{tabu}
+
+% Graphics
+\usepackage{graphicx}
+\usepackage{tkz-graph}
+
+% Calculations
+\usepackage{calc}
+
+% Unicode
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+% Handle language and quotation marks
+\usepackage{polyglossia}
+\setdefaultlanguage[variant=usmax]{english}
+\usepackage[style=american,english=american,autopunct]{csquotes} % Put quotations in \enquote{} or \textquote{}
+
+% Date and time
+\usepackage[useregional]{datetime2}
+
+% Improve typography
+\usepackage[final]{microtype}
+
+% Set fonts
+\usepackage{fontspec}
+\setmainfont{Junicode}[Ligatures=TeX,Numbers=Lowercase]
+\setsansfont{Fira Sans}[Ligatures=TeX,Numbers=Lowercase]
+\setmonofont{Noto Sans Mono}[Ligatures=TeX,Numbers=Lowercase]
+
+% FontAwesome icons
+\usepackage{fontawesome}
+
+% Colors customization
+\usepackage{xcolor}
+\definecolor{sapphire}{HTML}{1A527C}
+\definecolor{lightgray}{HTML}{777777}
+
+% Reformat page headers
+\pagestyle{Ruled}
+\nouppercaseheads
+
+% Reformat chapter titles
+\chapterstyle{ell}
+
+% Reformat section headings
+\hangsecnum % Put section numbers in the margins
+\setsecheadstyle{\LARGE\sffamily}
+\setsubsecheadstyle{\Large\sffamily}
+\setsubsubsecheadstyle{\large\sffamily}
+\setsubsubsecindent{1em}
+\setparaheadstyle{\sffamily\bfseries}
+\setsubparaheadstyle{\sffamily\bfseries}
+
+% Set Table of Contents to include subsections
+%\setcounter{secnumdepth}{2}% Doesn't work for some reason
+\setsecnumdepth{subsection}
+\settocdepth{subsection}
+
+% Bibliography
+\usepackage[backend=biber,natbib]{biblatex-chicago}
+\addbibresource{bibliography.bib}
+
+% Indexes
+\usepackage{makeidx}
+\makeindex
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+	% bookmarks=true,% show bookmarks bar?
+	unicode=true,% non-Latin characters in Acrobat’s bookmarks
+	pdftitle={Ardusa},% title
+	pdfauthor={Ian A.~Cook},% author
+	pdfsubject={A grammar of the Ardusan languages},% subject of the document
+	pdfcreator={Ian A.~Cook},% creator of the document
+	pdfproducer={Ian A.~Cook},% producer of the document
+	pdfkeywords={Ardusa, language, linguistics, grammar},% list of keywords
+	linktoc=all,% defines which part of the table of contents is made into a link
+	colorlinks=true,% false: boxed links; true: colored links
+	linkcolor=.,% color of internal links
+	citecolor=.,% color of links to bibliography
+	filecolor=.,% color of file links
+	urlcolor=sapphire% color of external links
+}
+\urlstyle{same}
+
+% Glossaries
+\usepackage[mcolblock,glosses,nomain,toc]{leipzig}
+\makeglossaries
+\newleipzig{aff}{aff}{affirmative, confirmation}
+%\newleipzig{neg}{neg}{negative, negation}% Already defined
+\newleipzig{act}{act}{active}
+%\newleipzig{pass}{pass}{passive}% Already defined
+%\newleipzig{antip}{antip}{antipassive}% Already defined
+%\newleipzig{caus}{caus}{causative}% Already defined
+%\newleipzig{refl}{refl}{reflexive}% Already defined
+%\newleipzig{recp}{recp}{reciprocal}% Already defined
+%\newleipzig{ind}{ind}{indicative}% Already defined
+%\newleipzig{subj}{sbjv}{subjunctive}% Already defined
+%\newleipzig{cond}{cond}{conditional}% Already defined
+\newleipzig{opt}{opt}{optative}
+\newleipzig{des}{des}{desiderative}
+\newleipzig{tent}{tent}{tentative}
+\newleipzig{pot}{pot}{potential}
+\newleipzig{perm}{perm}{permissive}
+\newleipzig{nec}{nec}{necessitative}
+\newleipzig{int}{int}{interrogative}
+%\newleipzig{imp}{imp}{imperative}% Already defined
+\renewleipzig{prf}{prf}{perfective}% Already defined as perfect
+\newleipzig{mom}{mom}{momentane}
+\newleipzig{smlf}{smlf}{semelfactive}
+\newleipzig{iter}{iter}{iterative}
+\newleipzig{hab}{hab}{habitual}
+\newleipzig{inc}{inc}{inceptive}
+\newleipzig{prg}{prg}{progressive}
+\newleipzig{cnt}{cnt}{continuative}
+\newleipzig{rsm}{rsm}{resumptive}
+%\newleipzig{dur}{dur}{durative}% Already defined
+\newleipzig{pstv}{pstv}{pausative}
+\newleipzig{term}{term}{terminative}
+\newleipzig{rtsp}{rtsp}{retrospective}
+\newleipzig{prsp}{prsp}{prospective}
+\newleipzig{dsc}{dsc}{discontinuous}
+\newleipzig{gno}{gno}{gnomic}
+%\newleipzig{inf}{inf}{infinitive}% Already defined
+%\newleipzig{ptcp}{ptcp}{participle}% Already defined
+\newleipzig{grv}{grv}{gerundive}
+\newleipzig{serg}{serg}{same ergative referent as previous clause}
+\newleipzig{sabs}{sabs}{same absolutive referent as previous clause}
+\newleipzig{sptv}{sptv}{same partitive referent as previous clause}
+\newleipzig{psv}{psv}{positive}
+\newleipzig{cmp}{cmp}{comparative}
+\newleipzig{sup}{sup}{superlative}
+\newleipzig{an}{an}{animate}
+\newleipzig{in}{in}{inanimate}
+\newleipzig{ab}{ab}{abstract}
+\newleipzig{fp}{1}{first person}
+\newleipzig[short={1\glstextup{s}}]{fps}{1s}{first person singular}
+\newleipzig[short={1\glstextup{p}i}]{fpi}{1pi}{first person plural inclusive}
+\newleipzig[short={1\glstextup{p}e}]{fpe}{1pe}{first person plural exclusive}
+\newleipzig{sp}{2}{second person}
+\newleipzig[short={2\glstextup{s}}]{sps}{2s}{second person singular}
+\newleipzig[short={2\glstextup{p}}]{spp}{2p}{second person plural}
+\newleipzig{tp}{3}{third person}
+\newleipzig[short={3\glstextup{s}}]{tps}{3s}{third person singular}
+\newleipzig[short={3\glstextup{p}}]{tpp}{3p}{third person plural}
+\renewleipzig{prox}{prox}{proximate}% Already defined as proximal
+\newleipzig{obv}{obv}{obviative}
+%\newleipzig{indf}{indf}{indefinite}% Already defined
+%\newleipzig{incl}{incl}{inclusive}% Already defined
+%\newleipzig{excl}{excl}{exclusive}% Already defined
+%\newleipzig{poss}{poss}{possessive}% Already defined
+%\newleipzig{poss}{poss}{possessive}% Already defined
+\newleipzig{ali}{ali}{alienable}
+\newleipzig{inal}{inal}{inalienable}
+%\newleipzig{sg}{sg}{singular}% Already defined
+%\newleipzig{pl}{pl}{plural}% Already defined
+%\newleipzig{def}{def}{definite}% Already defined
+%\newleipzig{indf}{indf}{indefinite}% Already defined
+\newleipzig{at}{at}{agent trigger}
+\newleipzig{pt}{pt}{patient trigger}
+\newleipzig{dir}{dir}{direct}
+\newleipzig{idr}{idr}{indirect}
+%\newleipzig{erg}{erg}{ergative}% Already defined
+%\newleipzig{abs}{abs}{absolutive}% Already defined
+\newleipzig{ptv}{ptv}{partitive}
+%\newleipzig{voc}{voc}{vocative}% Already defined
+%\newleipzig{gen}{gen}{genitive}% Already defined
+%\newleipzig{dat}{dat}{dative}% Already defined
+\newleipzig{lat}{lat}{lative}
+%\newleipzig{abl}{abl}{ablative}% Already defined
+\newleipzig{pro}{pro}{prolative}
+%\newleipzig{ins}{ins}{instrumental}% Already defined
+%\newleipzig{ben}{ben}{benefactive}% Already defined
+\newleipzig{cau}{cau}{causal}
+%\newleipzig{com}{com}{comitative}% Already defined
+\newleipzig{prv}{prv}{privative}
+\newleipzig{crd}{crd}{cardinal}% Numbers
+\newleipzig{ord}{ord}{ordinal}% Numbers
+\newleipzig{part}{part}{partitive (number)}% Numbers
+\newleipzig{mult}{mult}{multiplicative}% Numbers
+\newleipzig{coll}{coll}{collective}% Numbers
+%\newleipzig{distr}{distr}{distributive}% Numbers % Already defined
+\newleipzig{sbst}{sbst}{substantive possessive}
+%\newleipzig{rel}{rel}{relative}% Already defined
+\newleipzig{rrel}{rrel}{restrictive relative}
+\newleipzig{nrrel}{nrrel}{non-restrictive relative}
+%\newleipzig{q}{q}{interrogative, question}% Already defined
+\newleipzig{dim}{dim}{diminutive}
+\newleipzig{aug}{aug}{augmentative}
+\newleipzig{lau}{lau}{laudative}
+\newleipzig{pej}{pej}{pejorative}
+\newleipzig{nmz}{nmz}{nominalizer}
+
+% Linguistics packages
+\usepackage{vowel} % Draw vowel charts
+\usepackage[linguistics]{forest} % Syntax trees
+\usepackage{expex} % Examples and glosses
+\usepackage{phonrule} % Phonological rules
+
+% Define tree styles
+\forestset{
+	dotted tier/.style={
+		where n children=0{tier=word,edge=dotted,calign with current edge}{}
+	}
+}
+
+% Define macro to make ellipsis words in syntax trees light gray
+\newcommand{\elps}{\color{lightgray}}
+
+% Linguistic conventions
+% Square brackets for exact phonetic pronunciations
+\newcommand{\phnt}[1]{[#1]}
+% Slashes for approximate phonemic representations
+\newcommand{\phnm}[1]{/#1/}
+% Angle brackets for orthographic representations
+\newcommand{\orth}[1]{⟨#1⟩}
+% Quotes for translations
+\newcommand{\defn}[1]{\enquote*{#1}}
+% Parentheses for inline gloss
+\newcommand{\gloss}[1]{(#1)}
+% Astrisk for ungrammatical/incorrect
+\newcommand{\ungr}{*}
+% Question mark for questionable grammar
+\newcommand{\ques}{\fakesuperscript{?}}
+% Exclamation point for semantic oddity
+\newcommand{\excl}{\fakesuperscript{!}}
+
+% Commands for certain IPA symbols
+% Primary stress
+\newcommand{\pstrs}{ˈ}
+% Secondary stress
+\newcommand{\sstrs}{ˌ}
+% Geminates
+\newcommand{\gem}[1]{#1ː}
+% Ejectives
+\newcommand{\eje}[1]{#1'}
+% Dentalized
+\newcommand{\dent}[1]{#1̪}
+% Non-syllabic
+\newcommand{\nsyl}[1]{#1̯}
+
+% Define macro so foreign words are italicized
+\newcommand{\fw}[1]{\textit{#1}}
+
+% Title page data
+\newcommand{\langtvk}{Tavonic}
+\newcommand{\nlangtvk}{Tavonak}
+\newcommand{\langank}{Alnuric}
+\newcommand{\nlangank}{Alnurek}
+\newcommand{\langrdk}{Redodhic}
+\newcommand{\nlangrdk}{Redoðik}
+\title{Ardusa}
+\newcommand{\subtitle}{A Grammar of the Ardusan Languages}
+\author{Ian A.~Cook}
+\date{\today}
+
+% Define title page style
+\makeatletter
+\newcommand{\Titlep}{%
+	\begingroup
+	\centering
+	{\Huge \@title}\\[\baselineskip]
+	{\LARGE\textsc \subtitle{}}\\[\baselineskip]
+	{\Large\textit{by \@author}}\\
+	\vfill
+	\textit{last edited}\\
+	{\large \@date}\par
+	\endgroup
+}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document
+
+\begin{document}
+
+% Title leaf
+
+\begin{titlingpage}
+	% Title page
+	\Titlep{}
+	\clearpage
+	% Title verso
+	\input{./Chapters/colophon.tex}
+\end{titlingpage}
+
+% Front matter
+
+\frontmatter
+\pdfbookmark[0]{\contentsname}{toc}\label{cha:toc}
+\tableofcontents*
+\clearpage
+\listoffigures\label{cha:figures}
+\clearpage
+\listoftables\label{cha:tables}
+\clearpage
+\printglosses\label{cha:glossary}
+\bigskip
+\noindent\begin{tabular}{@{} l l}
+	\ungr & ungrammatical\\
+	\ques & grammatically questionable\\
+	\excl & semantically odd or ill-formed\\
+\end{tabular}
+\clearpage
+
+% Preface
+
+\input{./Chapters/preface.tex}
+
+% Main matter
+
+\mainmatter
+
+\excnt=1% Reset the numbering of examples to 1
+\input{./Chapters/phonology.tex}
+
+\excnt=1% Reset the numbering of examples to 1
+\input{./Chapters/writing.tex}
+
+% I don't think we need this chapter, at least for now
+% \excnt=1% Reset the numbering of examples to 1
+% \input{./Chapters/morphological-typology.tex}
+
+\excnt=1% Reset the numbering of examples to 1
+\input{./Chapters/morphology.tex}
+
+\excnt=1% Reset the numbering of examples to 1
+\input{./Chapters/compounding-incorporation.tex}
+
+\excnt=1% Reset the numbering of examples to 1
+\input{./Chapters/time-measurement.tex}
+
+\excnt=1% Reset the numbering of examples to 1
+\input{./Chapters/derivation.tex}
+
+\excnt=1% Reset the numbering of examples to 1
+\input{./Chapters/syntax.tex}
+
+\excnt=1% Reset the numbering of examples to 1
+\input{./Chapters/discourse.tex}
+
+\excnt=1% Reset the numbering of examples to 1
+\input{./Chapters/reference-grammar.tex}
+
+% Appendices
+
+\appendix
+
+\excnt=1% Reset the numbering of examples to 1
+\input{./Chapters/conceptual-metaphors.tex}
+
+\excnt=1% Reset the numbering of examples to 1
+\input{./Chapters/kinship.tex}
+
+\excnt=1% Reset the numbering of examples to 1
+\input{./Chapters/names.tex}
+
+\excnt=1% Reset the numbering of examples to 1
+\input{./Chapters/examples.tex}
+
+\excnt=1% Reset the numbering of examples to 1
+\input{./Chapters/vocabulary.tex}
+
+% Back matter
+
+\backmatter
+
+% Bibliography
+
+\printbibliography
+
+% Index
+
+\printindex
+
+\end{document}
