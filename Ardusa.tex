@@ -307,7 +307,7 @@
 	\Titlep{}
 	\clearpage
 	% Title verso
-	\input{./Chapters/colophon.tex}
+	\input{./Chapters/Frontmatter/colophon.tex}
 \end{titlingpage}
 
 % Front matter
@@ -331,68 +331,73 @@
 
 % Acknowledgments
 
-\input{./Chapters/acknowledgments.tex}
+\input{./Chapters/Frontmatter/acknowledgments.tex}
 
 % Preface
 
-\input{./Chapters/preface.tex}
+\input{./Chapters/Frontmatter/preface.tex}
 
 % Main matter
 
 \mainmatter
 
-\excnt=1% Reset the numbering of examples to 1
-\input{./Chapters/ethnography.tex}
+\part{Tavonic Language Family}
 
 \excnt=1% Reset the numbering of examples to 1
-%\input{./Chapters/phonology.tex}
+\input{./Chapters/Tavonic/ethnography.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-%\input{./Chapters/writing.tex}
+\input{./Chapters/Tavonic/phonology.tex}
 
-% I don't think we need this chapter, at least for now
-% \excnt=1% Reset the numbering of examples to 1
-% \input{./Chapters/morphological-typology.tex}
+% I don't know if we need this chapter
+\excnt=1% Reset the numbering of examples to 1
+\input{./Chapters/Tavonic/morphological-typology.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-%\input{./Chapters/morphology.tex}
+\input{./Chapters/Tavonic/morphology.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-%\input{./Chapters/compounding-incorporation.tex}
+\input{./Chapters/Tavonic/compounding.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-%\input{./Chapters/time-measurement.tex}
+\input{./Chapters/Tavonic/time-measurement.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-%\input{./Chapters/derivation.tex}
+\input{./Chapters/Tavonic/derivation.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-%\input{./Chapters/syntax.tex}
+\input{./Chapters/Tavonic/syntax.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-%\input{./Chapters/discourse.tex}
+\input{./Chapters/Tavonic/discourse.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-%\input{./Chapters/reference-grammar.tex}
+\input{./Chapters/Tavonic/reference-grammar.tex}
+
+\part{Kalaakan Language Family}
+
+\part{Kunmian Language Family}
 
 % Appendices
 
 \appendix
 
-\excnt=1% Reset the numbering of examples to 1
-\input{./Chapters/conceptual-metaphors.tex}
+\part{Appendices}
 
 \excnt=1% Reset the numbering of examples to 1
-%\input{./Chapters/kinship.tex}
+\input{./Chapters/Appendices/conceptual-metaphors.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-%\input{./Chapters/names.tex}
+%\input{./Chapters/Appendices/kinship.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-%\input{./Chapters/examples.tex}
+%\input{./Chapters/Appendices/names.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-%\input{./Chapters/vocabulary.tex}
+%\input{./Chapters/Appendices/examples.tex}
+
+\excnt=1% Reset the numbering of examples to 1
+%\input{./Chapters/Appendices/vocabulary.tex}
 
 % Back matter
 
