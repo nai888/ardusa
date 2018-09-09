@@ -1,5 +1,10 @@
 \documentclass[12pt,letterpaper,openany,twoside]{memoir}
 
+% Set new Part to always start on odd page
+\let\originalpart=\part
+\def\part{\cleardoublepage\originalpart}
+
+% Set the page margins
 \setlrmarginsandblock{1in}{1in}{*}
 \setulmarginsandblock{1in}{1in}{*}
 \checkandfixthelayout
@@ -269,10 +274,16 @@
 \newcommand{\landadj}{Ardusan}
 \newcommand{\langtvk}{Tavonic}
 \newcommand{\nlangtvk}{Tavonak}
+\newcommand{\peoptvk}{Tavotath}
+\newcommand{\npeoptvk}{Tavotaþ}
 \newcommand{\langank}{Alnuric}
 \newcommand{\nlangank}{Alnurek}
+\newcommand{\peopank}{Alnureth}
+\newcommand{\npeopank}{Alnureþ}
 \newcommand{\langrdk}{Redodhic}
 \newcommand{\nlangrdk}{Redoðik}
+\newcommand{\peoprdk}{Redodhith}
+\newcommand{\npeoprdk}{Redoðiþ}
 
 % Title page data
 \title{\landn}
@@ -349,7 +360,6 @@
 \excnt=1% Reset the numbering of examples to 1
 \input{./Chapters/Tavonic/phonology.tex}
 
-% I don't know if we need this chapter
 \excnt=1% Reset the numbering of examples to 1
 \input{./Chapters/Tavonic/morphological-typology.tex}
 
@@ -372,11 +382,89 @@
 \input{./Chapters/Tavonic/discourse.tex}
 
 \excnt=1% Reset the numbering of examples to 1
-\input{./Chapters/Tavonic/reference-grammar.tex}
+\input{./Chapters/Tavonic/tvk-reference-grammar.tex}
+
+\excnt=1% Reset the numbering of examples to 1
+\input{./Chapters/Tavonic/ank-reference-grammar.tex}
+
+\excnt=1% Reset the numbering of examples to 1
+\input{./Chapters/Tavonic/rdk-reference-grammar.tex}
 
 \part{Kalaakan Language Family}
 
+\excnt=1% Reset the numbering of examples to 1
+\chapter{History and Ethnography}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Phonology}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Morphological Typology}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Morphology}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Compounding}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Time and Measurement}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Derivation}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Syntax}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Discourse}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Kalaakan Reference Grammar}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Elvish Reference Grammar}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Dwarvish Reference Grammar}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Orcish Reference Grammar}
+
 \part{Kunmian Language Family}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{History and Ethnography}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Phonology}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Morphological Typology}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Morphology}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Compounding}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Time and Measurement}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Derivation}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Syntax}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Discourse}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Kunmian Reference Grammar}
+
+\excnt=1% Reset the numbering of examples to 1
+\chapter{Gnomish Reference Grammar}
 
 % Appendices
 
@@ -388,15 +476,19 @@
 \input{./Chapters/Appendices/conceptual-metaphors.tex}
 
 \excnt=1% Reset the numbering of examples to 1
+\chapter{Kinship}
 %\input{./Chapters/Appendices/kinship.tex}
 
 \excnt=1% Reset the numbering of examples to 1
+\chapter{Names}
 %\input{./Chapters/Appendices/names.tex}
 
 \excnt=1% Reset the numbering of examples to 1
+\chapter{Examples}
 %\input{./Chapters/Appendices/examples.tex}
 
 \excnt=1% Reset the numbering of examples to 1
+\chapter{Vocabulary}
 %\input{./Chapters/Appendices/vocabulary.tex}
 
 % Back matter
