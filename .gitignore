@@ -41,6 +41,7 @@
 
 # Build tool auxiliary files
 *.synctex
+*.synctex(busy)
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
