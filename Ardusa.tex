@@ -236,6 +236,14 @@
 % Define macro to make ellipsis words in syntax trees light gray
 \newcommand{\elps}{\color{lightgray}}
 
+% Implement 3 levels of embedding in ExPex
+\def\beginsubsub{%
+	\par
+	\begingroup
+	\advance\leftskip by 2em
+	\def\b##1{\par\leavevmode\llap{\hbox to 2em{##1\hfil}}\ignorespaces}}
+\def\endsubsub{\par\endgroup}
+
 % Linguistic conventions
 % Square brackets for exact phonetic pronunciations
 \newcommand{\phnt}[1]{[#1]}
