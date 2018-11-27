@@ -246,6 +246,7 @@ In all cases, however, inflected forms constitute singular \emph{syntactic} word
 
 \subsection{Suffixation}
 \label{subsec:tvk-suffixation}
+\index{morphological typology!processes!suffixation|(}
 
 Suffixes in \langtvk{} apply mainly to verbs. All verbal inflections occur via the addition of suffixes, whether phonologically bound or not. This is illustrated in example~\getref{ex:tvk-verbs-sfxs}.
 
@@ -289,6 +290,8 @@ Suffixes in \langtvk{} apply mainly to verbs. All verbal inflections occur via t
 
 As discussed in \autoref{subsec:tvk-synthesis}, although the particle \fw{bo} is a separate phonological word, it functions syntactically as a suffix. This is shown in example~\getfullref{ex:tvk-verbs-sfxs.neg} where it attaches to the verb \fw{kantenta} to negate it.
 
+Suffixes are also present on adjectives, though only minimally. Adjectives take one of two vowel endings to mark the gender of its referent, with animate adjectives ending in \fw{-i}, \fw{-a}, or \fw{u} and inanimate adjectives ending in \fw{-e} or \fw{-o}.
+
 \pex<ex:tvk-adjective-sfxs>
 	\a<ae>\fw{ablunga} \phnm{ab.lun\pstrs ga} \gloss{\An} vs. \fw{ablunge} \phnm{ab.lun\pstrs ge} \gloss{\In} \defn{catlike}
 	\a<io>\fw{akrandi} \phnm{ak.ran\pstrs di} \gloss{\An} vs. \fw{akrando} \phnm{ak.ran\pstrs do} \gloss{\In} \defn{writable}
@@ -296,17 +299,63 @@ As discussed in \autoref{subsec:tvk-synthesis}, although the particle \fw{bo} is
 	\a<uo>\fw{fraþru} \phnm{fraθ\pstrs ru} \gloss{\An} vs. \fw{fraþro} \phnm{fraθ\pstrs ro} \gloss{\In} \defn{observant}
 \xe
 
-Suffixes are also present on adjectives, though only minimally. Adjectives take one of two vowel endings to mark the gender of its referent.
+Suffixation also occurs regularly in derivational inflection. In fact, several derivational suffixes can be strung together to derive yet more words. Example~\getref{ex:tvk-derivation-sfxs} shows this process.
 
+\pex<ex:tvk-derivation-sfxs>
+	\a<root1>\fw{frali} \phnm{\pstrs fra.li} \defn{to see}
+	\a<der11>\fw{fravem} \phnm{fra\pstrs vem} \defn{sight}
+	\a<der12>\fw{fravemitla} \fw{-o} \phnm{fra.vem.it\pstrs la} \defn{visual}
+	\a<root2>\fw{onaš} \phnm{o\pstrs naʃ} \defn{rug}
+	\a<der21>\fw{onašuli} \phnm{o.na\pstrs ʃu.li} \defn{to place}
+	\a<der22>\fw{onašinsuli} \phnm{o.na.ʃin\pstrs su.li} \defn{to re-place}
+\xe
 
+In example~\getfullref{ex:tvk-derivation-sfxs.der22}, the \fw{-ins} affix may not immediately appear to be a suffix, however it should be noted that it is being attached to the end of the \emph{stem} of the word, which is \fw{onaš-}, prior to the verb's infinitive ending \fw{-uli}, which is an \emph{inflectional} suffix.
 
-Suffixation also occurs regularly in derivational inflection.
+\index{morphological typology!processes!suffixation|)}
 
 \subsection{Cliticization}
 \label{subsec:tvk-cliticization}
+\index{morphological typology!processes!cliticization|(}
 
-Distinguishing clitics from affixes\autocite{Zwicky-and-pullum-1983}. Also\autocite{spencer-luis-2012}. Distinguishing clitics from words\autocite{Zwicky-1985}.
+Clitics can be difficult to define in a formal way, and it is therefore worthwhile to explain how certain morphemes in \langtvk{} can be classified as such.
 
+A \enquote*{clitic} is often characterized as \enquote{a \enquote{small}, prosodically weak, or non-prominent word which fails to respect normal principles of syntactic distribution because it requires a host to which it can attach phonologically}\autocite{spencer-luis-2012}. Clitics are different from affixes in that they will typically \enquote{cliticize \enquote{promiscuously} to a word of any old category, including uninflectable words which otherwise fail to take any affixes whatever}\autocite{spencer-luis-2012}, whereas affixes are limited to only specific parts of speech to which they can connect\autocite{Zwicky-and-pullum-1983}. Yet, they are different from function words in that they are bound, that is they do not have the free ordering afforded to words\autocite{Zwicky-1985}.
+
+The primary example of clitics in \langtvk{} is the noun prepositions. These particles cannot appear alone, conveying solely grammatical, not lexical, information. They are not affixes because they attach to the beginning of the entire noun phrase, no matter what word comes after, rather than attaching directly to the head noun.
+
+\pex<ex:tvk-noun-clitics>
+	\a<simple>\begingl
+		\glpreamble\fw{Mod nas oko fra.}\\
+		\phnm{\pstrs mod nas o\pstrs ko \pstrs fra}//
+		\gla mod nas= oko fr-a//
+		\glb \Fps.\Erg{} \An.\Pc.\Top{} dog see-\Ind.\Npst.\Ipfv//
+		\glft \defn{I see the dogs.}//
+	\endgl
+	\a<adjective>\begingl
+		\glpreamble\fw{Mod nas urda oko fra.}\\
+		\phnm{\pstrs mod nas ur\pstrs da o\pstrs ko \pstrs fra}//
+		\gla mod nas= urd-a oko fr-a//
+		\glb \Fps.\Erg{} \An.\Pc.\Top{} protected-\An{} dog see-\Ind.\Npst.\Ipfv//
+		\glft \defn{I see the protected dogs.}//
+	\endgl
+	\a<possessedpro>\begingl
+		\glpreamble\fw{Mod nas tesar urda oko fra.}\\
+		\phnm{\pstrs mod nas te\pstrs sar ur\pstrs da o\pstrs ko \pstrs fra}//
+		\gla mod nas= tesar urd-a oko fr-a//
+		\glb \Fps.\Erg{} \An.\Pc.\Top{} \Spc.\Gen{} protected-\An{} dog see-\Ind.\Npst.\Ipfv//
+		\glft \defn{I see your protected dogs.}//
+	\endgl
+	\a<possessednoun>\begingl
+		\glpreamble\fw{Mod nas su esokon urda oko fra.}\\
+		\phnm{\pstrs mod nas su e.so\pstrs kon ur\pstrs da o\pstrs ko \pstrs fra}//
+		\gla mod nas= su= esokon urd-a oko fr-a//
+		\glb \Fps.\Erg{} \An.\Pc.\Top{} \An.\Sg.\Gen{} protected-\An{} dog see-\Ind.\Npst.\Ipfv//
+		\glft \defn{I see the farmer's protected dogs.}//
+	\endgl
+\xe
+
+\index{morphological typology!processes!cliticization|)}
 \index{morphological typology!processes|)}
 
 \section{Locus of Marking}
