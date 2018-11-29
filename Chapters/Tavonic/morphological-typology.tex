@@ -418,28 +418,29 @@ A speaker can, however, move the interrogative particle earlier in the sentence 
 		\begingl
 			\glpreamble\fw{tes botra}\\
 			\phnm{\pstrs tes bot\pstrs ra}//
-			\gla tes botra//
-			\glb \Sps.\Gen{} wife//
+			\gla \textbf{tes} botra//
+			\glb \Sps.\textbf{\Gen} wife//
 			\glft\defn{your wife}//
 		\endgl
 	\end{minipage}
 	\begin{minipage}[t]{0.5\remaining}
 		\begin{forest} dotted tier
 			[\fw{botra}
-				[\fw{tes}
-					[\fw{tes}, name=dependent]
+				[\fw{\textbf{tes}}
+					[\fw{\textbf{tes}}, name=dependent]
 				]
-				[\fw{botra}, name=head]]
+				[\fw{botra}, name=head]
+			]
 				\node at (head.south) {\textsc{\tiny head}};
 				\node at (dependent.south) {\textsc{\tiny dependent}};
 		\end{forest}
 	\end{minipage}
-	\a<n>\remainpex\begin{minipage}[t]{0.5\remaining}
+	\a<n>\begin{minipage}[t]{0.5\remaining}
 		\begingl
 			\glpreamble\fw{su esobiš botra}\\
 			\phnm{su e.so\pstrs biʃ bot\pstrs ra}//
-			\gla su= esobiš botra//
-			\glb \An.\Sg.\Gen= patriot wife//
+			\gla \textbf{su}= esobiš botra//
+			\glb \An.\Sg.\textbf{\Gen}= patriot wife//
 			\glft\defn{the patriot's wife}//
 		\endgl
 	\end{minipage}
@@ -447,8 +448,8 @@ A speaker can, however, move the interrogative particle earlier in the sentence 
 		\begin{forest} dotted tier
 			[\fw{botra}
 				[\fw{esobiš}
-					[\fw{su}
-						[\fw{su}]
+					[\fw{\textbf{su}}
+						[\fw{\textbf{su}}]
 					]
 					[\fw{esobiš}, name=dependent]
 				]
@@ -460,7 +461,7 @@ A speaker can, however, move the interrogative particle earlier in the sentence 
 	\end{minipage}
 \xe
 
-In example~\getfullref{ex:tvk-depmarking-possessive.pn}, \defn{you} are grammatically in possession of \fw{botra} \defn{wife}; the possessee forms the head of the clause while it is modified by the possessor, which receives the genitive inflection. In example~\getfullref{ex:tvk-depmarking-possessive.n}, \fw{botra} is still the possessee and thus the head of the clause while the genitive is marked on the dependent, \fw{esobiš} \defn{patriot}, using a noun preposition.
+In example~\getfullref{ex:tvk-depmarking-possessive.pn}, \defn{you} are grammatically in possession of \fw{botra} \defn{wife}; the possessee forms the head of the phrase while it is modified by the possessor, which receives the genitive inflection. In example~\getfullref{ex:tvk-depmarking-possessive.n}, \fw{botra} is still the possessee and thus the head of the phrase while the genitive is marked on the dependent, \fw{esobiš} \defn{patriot}, using a noun preposition.
 
 \langtvk{} also shows dependent marking when modifying nouns with adjectives.
 
@@ -477,16 +478,17 @@ In example~\getfullref{ex:tvk-depmarking-possessive.pn}, \defn{you} are grammati
 	\begin{minipage}[t]{0.5\remaining}
 		\begin{forest} dotted tier
 			[\fw{botra}
-				[\fw{\textbf{ran}}
+				[\fw{\textbf{ran}}, name=prepmod
 					[\fw{\textbf{ran}}, name=prep]
 				]
-				[\fw{ǩalonž\textbf{a}}
+				[\fw{ǩalonž\textbf{a}}, name=adj
 					[\fw{ǩalonž\textbf{a}}, name=dependent]
 				]
 				[\fw{botra}, name=head]
 			]
 			\node (headlabel) at (head.south) {\textsc{\tiny head}};
 			\node (deplabel) at (dependent.south) {\textsc{\tiny dependent}};
+			\draw[->] (prepmod.295) .. controls +(down:1em) and +(down:1em) .. (adj.300);
 			\draw[->] (deplabel.south) [below] --+ (0, -0.75em) -| node[near start,below]{\tiny{\An{} agreement}} (headlabel.south);
 			\draw[dashed][->] (prep.south) [below] --+ (0, -0.85em) -| (headlabel.south);
 		\end{forest}
@@ -494,5 +496,119 @@ In example~\getfullref{ex:tvk-depmarking-possessive.pn}, \defn{you} are grammati
 \xe
 
 In example~\getref{ex:tvk-depmarking-adjective}, while the head noun \fw{botra} is marked for animacy with \fw{ran}, the dependent modifying adjective \fw{ǩalonža} \defn{husbandless} takes the \fw{-a} animate ending to match.
+
+At the clause level, \langtvk{} is solely dependent-marking. Verbs have no grammatical inflections that indicate the grammatical role of any noun phrases within the clause, with that information being marked only on the verb's dependents, the noun phrases.
+
+\pex<ex:tvk-depmarking-verbs>
+	\a<intranspn>\remainpex\begin{minipage}[t]{0.5\remaining}
+		\begingl
+			\glpreamble\fw{Mon usuš.}\\
+			\phnm{\pstrs mon u\pstrs suʃ}//
+			\gla \textbf{mon} us-uš//
+			\glb \Fps.\textbf{\Top} sing-\Ind.\Npst.\Rtsp//
+			\glft\defn{I have sung.}//
+		\endgl
+	\end{minipage}
+	\begin{minipage}[t]{0.5\remaining}
+		\begin{forest} dotted tier
+			[\fw{usuš}
+				[\fw{\textbf{mon}}
+					[\fw{\textbf{mon}}, name=dependent]
+				]
+				[\fw{usuš}, name=head]
+			]
+			\node at (head.south) {\textsc{\tiny head}};
+			\node at (dependent.south) {\textsc{\tiny dependent}};
+		\end{forest}
+	\end{minipage}
+	\a<transpn>\begin{minipage}[t]{0.5\remaining}
+		\begingl
+			\glpreamble\fw{Mon þet kante.}\\
+			\phnm{\pstrs mon \pstrs θet kan\pstrs te}//
+			\gla \textbf{mon} \textbf{þet} kant-e//
+			\glb \Fps.\textbf{\Top} \Sps.\textbf{\Acc} thank-\Ind.\Npst.\Imp//
+			\glft\defn{I thank you.}//
+		\endgl
+	\end{minipage}
+	\begin{minipage}[t]{0.5\remaining}
+		\begin{forest} dotted tier
+			[\fw{kante}
+				[\fw{\textbf{mon}}
+					[\fw{\textbf{mon}}, name=dependentabs]
+				]
+				[\fw{\textbf{þet}}
+					[\fw{\textbf{þet}}, name=dependentacc]
+				]
+				[\fw{kante}, name=head]
+			]
+			\node at (head.south) {\textsc{\tiny head}};
+			\node at (dependentabs.south) {\textsc{\tiny dependent}};
+			\node at (dependentacc.295) {\textsc{\tiny dependent}};
+		\end{forest}
+	\end{minipage}
+	\a<intransn>\begin{minipage}[t]{0.5\remaining}
+		\begingl
+			\glpreamble\fw{Nas arb usuš.}\\
+			\phnm{nas \pstrs arb u\pstrs suʃ}//
+			\gla \textbf{nas}= arb us-uš//
+			\glb \An.\Pc.\textbf{\Top}= bird sing-\Ind.\Npst.\Rtsp//
+			\glft\defn{The birds have sung.}//
+		\endgl
+	\end{minipage}
+	\begin{minipage}[t]{0.5\remaining}
+		\begin{forest} dotted tier
+			[\fw{usuš}
+				[\fw{arb}
+					[\fw{\textbf{nas}}
+						[\fw{\textbf{nas}}]
+					]
+					[\fw{arb}, name=dependent]
+				]
+				[\fw{usuš}, name=head]
+			]
+			\node at (head.south) {\textsc{\tiny head}};
+			\node at (dependent.south) {\textsc{\tiny dependent}};
+		\end{forest}
+	\end{minipage}
+	\a<transn>\begingl
+		\glpreamble\fw{Do su botra ǩalo mi tavofre alma frak.}\\
+		\phnm{do su bot\pstrs ra xa\pstrs lo mi ta.vof\pstrs re al\pstrs ma \pstrs frak}//
+		\gla \textbf{do}= su= botra ǩalo \textbf{mi}= tavofr-e alma fr-ak//
+		\glb \An.\Sg.\textbf{\Erg}= \An.\Sg.\Gen= woman husband \In.\Sg.\textbf{\Top}= inhabited-\In{} house see-\Ind.\Pst.\Prf//
+		\glft\defn{The woman's husband saw the inhabited house.}//
+	\endgl\\
+	\begin{forest} dotted tier
+		[\fw{frak}
+			[\fw{ǩalo}
+				[\fw{\textbf{do}}
+					[\fw{\fw{\textbf{do}}}]
+				]
+				[\fw{botra}
+					[\fw{su}
+						[\fw{su}]
+					]
+					[\fw{botra}]
+				]
+				[\fw{ǩalo}, name=dependenterg]
+			]
+			[\fw{alma}
+				[\fw{\textbf{mi}}, name=prepmod
+					[\fw{\textbf{mi}}]
+				]
+				[\fw{tavofre}, name=adj
+					[\fw{tavofre}]
+				]
+				[\fw{alma}, name=dependentacc]
+			]
+			[\fw{frak}, name=head]
+		]
+		\node at (head.south) {\textsc{\tiny head}};
+		\node at (dependenterg.south) {\textsc{\tiny dependent}};
+		\node at (dependentacc.south) {\textsc{\tiny dependent}};
+		\draw[->] (prepmod.295) .. controls +(down:1em) and +(down:1em) .. (adj.300);
+	\end{forest}
+\xe
+
+In example~\getfullref{ex:tvk-depmarking-verbs.intranspn}, the pronoun \fw{mon} is declined to indicate it is the topic of the sentence while the verb \fw{usuš}, despite conjugating for mood, tense, and aspect, is not marked for this role. Example~\getfullref{ex:tvk-depmarking-verbs.transpn} similarly marks the two pronouns \fw{mon} and \fw{þet} for their roles in the sentence as topic and object while the verb \fw{kante} does not inflect to indicate these roles. When nouns are used instead of pronouns, as in examples~\getfullref{ex:tvk-depmarking-verbs.intransn}--\getref{ex:tvk-depmarking-verbs.transn}, the nouns are marked for their grammatical role by their prepositions, their own dependents, while the head verb remains unmarked for these roles.
 
 \index{morphological typology!locus of marking|)}
