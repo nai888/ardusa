@@ -15,6 +15,7 @@
 \usepackage{rotating}
 \usepackage{longtable}
 \usepackage{tabu}
+\usepackage{etoolbox}
 
 % Graphics
 \usepackage{graphicx}
@@ -100,6 +101,14 @@
 	urlcolor=sapphire% color of external links
 }
 \urlstyle{same}
+
+% Calculate remaining space in line for ex and pex
+% see https://tex.stackexchange.com/a/376534
+\newlength{\remaining}
+\newcommand{\remainpex}{\setlength{\remaining}{\linewidth-\lingtextoffset-\linglabelwidth-\lingnumoffset-\linglabeloffset-\widthof{\exnoprint}}}
+\newcommand{\remainex}{\setlength{\remaining}{\linewidth-\lingnumoffset-\lingtextoffset-\widthof{\exnoprint}}}
+\pretocmd{\pex}{\remainpex}{}{}% Not working for some reason
+\pretocmd{\ex}{\remainex}{}{}% Not working for some reason
 
 % Glossaries
 \usepackage[mcolblock,glosses,nomain,toc]{leipzig}
