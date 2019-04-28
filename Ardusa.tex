@@ -70,9 +70,17 @@
 \setsubparaheadstyle{\sffamily\bfseries}
 
 % Set Table of Contents to include subsections
-%\setcounter{secnumdepth}{2}% Doesn't work for some reason
+% \setcounter{secnumdepth}{2}% Doesn't work for some reason
 \setsecnumdepth{subsection}
 \settocdepth{subsection}
+
+% Increase amount of space between the number and entry in the Table of Contents
+\setlength\cftpartnumwidth{2.5em}
+\setlength\cftchapternumwidth{2.5em}
+
+% Increase indent of section and subsection in Table of Contents
+\setlength\cftsectionindent{2.5em}
+\setlength\cftsubsectionindent{5em}
 
 % Bibliography
 \usepackage[backend=biber,natbib]{biblatex-chicago}
