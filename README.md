@@ -2,7 +2,7 @@
 
 ## Current Build
 
-You can find the most recently compiled working draft PDF [here](https://rawgit.com/nai888/ardusa/master/Ardusa.pdf).
+You can find the most recently compiled working draft PDF [here](https://cdn.jsdelivr.net/gh/nai888/ardusa@master/Ardusa.pdf).
 
 ## Introduction
 
