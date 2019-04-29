@@ -20,4 +20,6 @@ Clone the repository and compile `Ardusa.tex` using `xelatex`, `biber`, `makeind
 
 ## Licensing
 
-This project is copyrighted 2018 by Ian A. Cook under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) license. (See a human-readable summary [here](https://creativecommons.org/licenses/by-nc-sa/4.0/).)
+This document is copyrighted 2018–2019 by Ian A. Cook under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) license. (See a human-readable summary [here](https://creativecommons.org/licenses/by-nc-sa/4.0/).)
+
+All languages described within this document are copyrighted 2018–2019 by Ian A. Cook, all rights reserved.
