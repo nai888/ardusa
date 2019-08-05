@@ -93,7 +93,7 @@ People's names can also be declined to the paucal or plural number to indicate t
 \subsection{Case}
 \label{subsec:tvk-nouns-case}
 
-As shown in Tables \ref{tab:tvk-an-vowel-decl} and \ref{tab:tvk-in-vowel-decl}, \langtvk{} noun phrases decline to five different grammatical cases\autocite{wals-49} in order to show their role in the sentence. These cases are governed by the phrase's verb or assigned to adjuncts depending on their purpose or meaning. As shown in the same declension tables, any of these grammatical cases can be replaced by or combined with topic markers. See \autoref{subsec:tvk-nouns-topicality} for more information on topicality.
+As shown in Tables \ref{tab:tvk-an-noun-decl} and \ref{tab:tvk-in-noun-decl}, \langtvk{} noun phrases decline to five different grammatical cases\autocite{wals-49} in order to show their role in the sentence. These cases are governed by the phrase's verb or assigned to adjuncts depending on their purpose or meaning. As shown in the same declension tables, any of these grammatical cases can be replaced by or combined with topic markers. See \autoref{subsec:tvk-nouns-topicality} for more information on topicality.
 
 \subsubsection{Absolutive and Intransitive}
 \label{subsubsec:tvk-nouns-absolutive}
@@ -150,7 +150,7 @@ However, the subject of certain transitive verbs will also take the intransitive
 		\glpreamble\fw{Ter ke arb fra vi?}\\
 		\phnm{ter ke arb \pstrs fra vi}//
 		\gla ter ke= arb fr-a =vi//
-		\glb \Sps.\Abs{} \An.\Sg.\Dat= bird see-\Ind.\Npst.\Ipfv{} =\Int//
+		\glb \Sps.\Abs{} \An.\Sg.\Dat= bird see-\Ind.\Npst.\Ipfv{} =\Q//
 		\glft\defn{Do you see a bird?}//
 	\endgl
 \xe
@@ -426,7 +426,7 @@ The case preposition that encodes \textit{only} topicality completely replaces t
 		\glpreamble\fw{Þan ke arb fra vi?}\\
 		\phnm{θan ke arb \pstrs fra vi}//
 		\gla þan ke= arb fr-a =vi//
-		\glb \Sps.\Top{} \An.\Sg.\Dat= bird see-\Ind.\Npst.\Ipfv{} =\Int//
+		\glb \Sps.\Top{} \An.\Sg.\Dat= bird see-\Ind.\Npst.\Ipfv{} =\Q//
 		\glft\defn{Do you see a bird?}//
 	\endgl
 	\a<erg>\begingl
@@ -674,7 +674,61 @@ The demonstratives can also be used as determiners by pairing them with a noun. 
 \subsection{Interrogative Pronouns and Determiners}
 \label{subsec:tvk-interrogative-pronouns-determiners}
 
-\langtvk{} contains only one interrogative, \fw{arke} \phnm{ar\pstrs ke}.
+\langtvk{} contains only one interrogative, \fw{arke} \phnm{ar\pstrs ke}. By default, \fw{arke} means \defn{who} or \defn{what}, depending on how it is declined.
+
+\pex<ex:tvk-int-pronoun>
+	\a<obj>\begingl
+		\glpreamble\fw{Ter ǩo arke frak?}\\
+		\phnm{\pstrs ter xo ar\pstrs ke \pstrs frak}//
+		\gla ter ǩo= arke fr-ak//
+		\glb \Sps.\Abs{} \In.\Sg.\Dat= \Int{} see-\Ind.\Pst.\Pfv//
+		\glft\defn{What did you see?}//
+	\endgl
+	\a<subj>\begingl
+		\glpreamble\fw{Arke gin frak?}\\
+		\phnm{ar\pstrs ke gin \pstrs frak}//
+		\gla ∅= arke gin fr-ak//
+		\glb \Sg.\Abs= \Int{} \Tps.\In.\Top{} see-\Ind.\Pst.\Pfv//
+		\glft\defn{Who saw it?}//
+	\endgl
+\xe
+
+As shown in example~\getfullref{ex:tvk-int-pronoun.obj}, the interrogative pronoun is placed \fw{in situ}. In other words, the question word stays in place rather than being fronted to the beginning of the sentence like in English.
+
+Notice also in example~\getref{ex:tvk-int-pronoun} that the particle \fw{vi} is not used. Any sentence that contains the interrogative \fw{arke} can be seen to be a question, obviating the need for \fw{vi}. However, \fw{vi} can be added back in to emphasize or, conceivably in rare instances, clarify the question.
+
+\fw{Arke} can be paired with a noun as a determiner to narrow the scope of the question. This is how other interrogatives such as \defn{where}, \defn{when}, and \defn{how} are formed.
+
+\pex<ex:tvk-int-pronoun-others>
+	\a<where>\begingl
+		\glpreamble\fw{Ter gin arke inam e frak?}\\
+		\phnm{\pstrs ter gin ar\pstrs ke i\pstrs nam e \pstrs frak}//
+		\gla ter gin arke inam e fr-ak//
+		\glb \Sps.\Abs{} \Tps.\In.\Top{} \Int{} place at see-\Ind.\Pst.\Pfv//
+		\glft\defn{Where did you see it?}//
+	\endgl
+	\a<when>\begingl
+		\glpreamble\fw{Ter gin arke etri e frak?}\\
+		\phnm{\pstrs ter gin ar\pstrs ke et\pstrs ri e \pstrs frak}//
+		\gla ter gin arke etri e fr-ak//
+		\glb \Sps.\Abs{} \Tps.\In.\Top{} \Int{} time at see-\Ind.\Pst.\Pfv//
+		\glft\defn{When did you see it?}//
+	\endgl
+	\a<how-tool>\begingl
+		\glpreamble\fw{Ter gin arke mo frak?}\\
+		\phnm{\pstrs ter gin ar\pstrs ke mo \pstrs frak}//
+		\gla ter gin arke mo fr-ak//
+		\glb \Sps.\Abs{} \Tps.\In.\Top{} \Int{} with see-\Ind.\Pst.\Pfv//
+		\glft\defn{How (with what) did you see it?}//
+	\endgl
+	\a<how-method>\begingl
+		\glpreamble\fw{Ter gin arke pul frak?}\\
+		\phnm{\pstrs ter gin ar\pstrs ke pul \pstrs frak}//
+		\gla ter gin arke pul fr-ak//
+		\glb \Sps.\Abs{} \Tps.\In.\Top{} \Int{} way see-\Ind.\Pst.\Pfv//
+		\glft\defn{How (what way) did you see it?}//
+	\endgl
+\xe
 
 \subsection{Relative Pronouns}
 \label{subsec:tvk-relative-pronouns}
