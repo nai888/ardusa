@@ -45,6 +45,8 @@
 \setmainfont{Junicode}[Ligatures=TeX,Numbers=Lowercase]
 \setsansfont{Fira Sans}[Ligatures=TeX,Numbers=Lowercase]
 \setmonofont{Noto Sans Mono}[Ligatures=TeX,Numbers=Lowercase]
+\newfontface{\scrff}{Ardusan Script}[Path = ./]
+\DeclareTextFontCommand{\scr}{\scrff}
 
 % FontAwesome icons
 \usepackage{fontawesome}
@@ -332,6 +334,7 @@
 	\begingroup
 	\centering
 	{\Huge \@title}\\[\baselineskip]
+	{\Huge \scr{\@title}}\\[\baselineskip]
 	{\LARGE\textsc \subtitle{}}\\[\baselineskip]
 	{\Large\textit{by \@author}}\\
 	\vfill
