@@ -90,8 +90,16 @@
 \addbibresource{bibliography.bib}
 
 % Indexes
-\usepackage{makeidx}
-\makeindex
+\usepackage[makeindex,useindex]{splitidx}
+\newindex[Tavonic]{tavonic}
+\newindex[Alnuric]{alnuric}
+\newindex[Redodhic]{redodhic}
+\newindex[Kalaakan]{kalaakan}
+\newindex[Elvish]{elvish}
+\newindex[Dwarvish]{dwarvish}
+\newindex[Orcish]{orcish}
+\newindex[Kunmian]{kunmian}
+\newindex[Gnomish]{gnomish}
 
 % Links
 \usepackage{hyperref}
@@ -673,6 +681,22 @@
 
 % Index
 
-\printindex
+\printindex[tavonic]
+\clearpage
+\printindex[alnuric]
+\clearpage
+\printindex[redodhic]
+\clearpage
+\printindex[kalaakan]
+\clearpage
+\printindex[elvish]
+\clearpage
+\printindex[dwarvish]
+\clearpage
+\printindex[orcish]
+\clearpage
+\printindex[kunmian]
+\clearpage
+\printindex[gnomish]
 
 \end{document}
