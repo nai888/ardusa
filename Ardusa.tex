@@ -1,5 +1,8 @@
 \documentclass[12pt,letterpaper,openany,twoside]{memoir}
 
+% Allow for more write streams than the default 16
+% \usepackage{morewrites}
+
 % Set new Part to always start on odd page
 \let\originalpart=\part
 \def\part{\cleardoublepage\originalpart}
@@ -90,16 +93,15 @@
 \addbibresource{bibliography.bib}
 
 % Indexes
-\usepackage[makeindex,useindex]{splitidx}
-\newindex[Tavonic]{tavonic}
-\newindex[Alnuric]{alnuric}
-\newindex[Redodhic]{redodhic}
-\newindex[Kalaakan]{kalaakan}
-\newindex[Elvish]{elvish}
-\newindex[Dwarvish]{dwarvish}
-\newindex[Orcish]{orcish}
-\newindex[Kunmian]{kunmian}
-\newindex[Gnomish]{gnomish}
+\makeindex[tavonic]
+%\makeindex[alnuric]
+%\makeindex[redodhic]
+%\makeindex[kalaakan]
+%\makeindex[elvish]
+%\makeindex[dwarvish]
+%\makeindex[orcish]
+%\makeindex[kunmian]
+%\makeindex[gnomish]
 
 % Links
 \usepackage{hyperref}
@@ -681,22 +683,31 @@
 
 % Index
 
+\renewcommand\indexname{Index of Tavonic}
 \printindex[tavonic]
-\clearpage
-\printindex[alnuric]
-\clearpage
-\printindex[redodhic]
-\clearpage
-\printindex[kalaakan]
-\clearpage
-\printindex[elvish]
-\clearpage
-\printindex[dwarvish]
-\clearpage
-\printindex[orcish]
-\clearpage
-\printindex[kunmian]
-\clearpage
-\printindex[gnomish]
+%\clearpage
+%\renewcommand\indexname{Index of Alnuric}
+%\printindex[alnuric]
+%\clearpage
+%\renewcommand\indexname{Index of Redodhic}
+%\printindex[redodhic]
+%\clearpage
+%\renewcommand\indexname{Index of Kalaakan}
+%\printindex[kalaakan]
+%\clearpage
+%\renewcommand\indexname{Index of Elvish}
+%\printindex[elvish]
+%\clearpage
+%\renewcommand\indexname{Index of Dwarvish}
+%\printindex[dwarvish]
+%\clearpage
+%\renewcommand\indexname{Index of Orcish}
+%\printindex[orcish]
+%\clearpage
+%\renewcommand\indexname{Index of Kunmian}
+%\printindex[kunmian]
+%\clearpage
+%\renewcommand\indexname{Index of Gnomish}
+%\printindex[gnomish]
 
 \end{document}
