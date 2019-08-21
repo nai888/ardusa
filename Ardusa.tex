@@ -1,8 +1,5 @@
 \documentclass[12pt,letterpaper,openany,twoside]{memoir}
 
-% Allow for more write streams than the default 16
-% \usepackage{morewrites}
-
 % Set new Part to always start on odd page
 \let\originalpart=\part
 \def\part{\cleardoublepage\originalpart}
@@ -93,15 +90,7 @@
 \addbibresource{bibliography.bib}
 
 % Indexes
-\makeindex[tavonic]
-%\makeindex[alnuric]
-%\makeindex[redodhic]
-%\makeindex[kalaakan]
-%\makeindex[elvish]
-%\makeindex[dwarvish]
-%\makeindex[orcish]
-%\makeindex[kunmian]
-%\makeindex[gnomish]
+\makeindex
 
 % Links
 \usepackage{hyperref}
@@ -683,31 +672,6 @@
 
 % Index
 
-\renewcommand\indexname{Index of Tavonic}
 \printindex[tavonic]
-%\clearpage
-%\renewcommand\indexname{Index of Alnuric}
-%\printindex[alnuric]
-%\clearpage
-%\renewcommand\indexname{Index of Redodhic}
-%\printindex[redodhic]
-%\clearpage
-%\renewcommand\indexname{Index of Kalaakan}
-%\printindex[kalaakan]
-%\clearpage
-%\renewcommand\indexname{Index of Elvish}
-%\printindex[elvish]
-%\clearpage
-%\renewcommand\indexname{Index of Dwarvish}
-%\printindex[dwarvish]
-%\clearpage
-%\renewcommand\indexname{Index of Orcish}
-%\printindex[orcish]
-%\clearpage
-%\renewcommand\indexname{Index of Kunmian}
-%\printindex[kunmian]
-%\clearpage
-%\renewcommand\indexname{Index of Gnomish}
-%\printindex[gnomish]
 
 \end{document}
