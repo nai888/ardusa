@@ -45,7 +45,10 @@
 \setmainfont{Junicode}[Ligatures=TeX,Numbers=Lowercase]
 \setsansfont{Fira Sans}[Ligatures=TeX,Numbers=Lowercase]
 \setmonofont{Noto Sans Mono}[Ligatures=TeX,Numbers=Lowercase]
-\newfontface{\scrff}{Ardusan Sans}[Path = ./]
+\newfontface{\scrff}{ArdusanSans}[
+	Path = ./Script/ ,
+	Extension = .otf ,
+	UprightFont = *-Regular ]
 \DeclareTextFontCommand{\scr}{\scrff}
 
 % FontAwesome icons
