@@ -10,7 +10,7 @@ This document provides a detailed grammatical description of the languages of Ar
 
 ## Compiling
 
-Clone the repository and compile `Ardusa.tex` using `xelatex`, `biber`, `makeindex`, and `makeglossaries`. The standard TeXLive installation should include all the necessary packages. Make sure to include the [Junicode](http://junicode.sourceforge.net/) and [Fira Sans](https://fonts.google.com/specimen/Fira+Sans) fonts, which are used throughout the document.
+Clone the repository and compile `Ardusa.tex` using `xelatex`, `biber`, `makeindex`, and `makeglossaries`. The standard TeXLive installation should include all the necessary packages. Make sure to include the [Junicode](http://junicode.sourceforge.net/) and [Fira Sans](https://fonts.google.com/specimen/Fira+Sans) fonts, which are used throughout the document. You will also need the [Ardusan Sans](https://github.com/nai888/ardusan-sans) font, though a copy of the .otf file is contained in this repository.
 
 ## Documentation Inspiration
 
