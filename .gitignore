@@ -12,13 +12,25 @@
 *.cb
 *.cb2
 
-# Bibliography auxiliary files
+# Intermediate documents
+*.dvi
+*-converted-to.*
+
+# Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
 *.bcf
 *.blg
-*-blx-bib
+*-blx.aux
+*-blx.bib
 *.brf
 *.run.xml
+
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
 
 # Glossary auxiliary files
 *.acn
@@ -38,11 +50,3 @@
 *.ilg
 *.ind
 *.ist
-
-# Build tool auxiliary files
-*.synctex
-*.synctex(busy)
-*.synctex.gz
-*.synctex.gz(busy)
-*.pdfsync
-*.fdb_latexmk
