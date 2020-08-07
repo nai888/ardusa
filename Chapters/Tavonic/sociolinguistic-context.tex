@@ -12,6 +12,171 @@ For example: language is a tool. I speak \textit{with} or \textit{using} \langtv
 \label{sec:tvk-kinship-terms}
 \index{kinship|(}
 
+\afterpage{\clearpage
+	\begin{landscape}
+		\begin{figure}[h]\centering
+			\caption{\langtvk{} Kinship Tree}
+			\label{fig:tvk-kinship}
+			\index{kinship}
+			\tiny
+			\begin{tikzpicture}[scale=0.55]
+			\GraphInit[vstyle=Normal]
+			\SetVertexLabelOut
+			% Female
+			\tikzset{VertexStyle/.append style={shape=circle,minimum size=1em}}
+			\Vertex[x=-14,y=8,Lpos=270,L=impersa]{MGMZ}
+			\Vertex[x=-10,y=8,Lpos=270,L=keðima]{MGM}
+			\Vertex[x=-6,y=8,Lpos=270,L=aversa]{MGFZ}
+			\Vertex[x=4,y=8,Lpos=270,L=impersa]{PGMZ}
+			\Vertex[x=8,y=8,Lpos=270,L=keðima]{PGM}
+			\Vertex[x=12,y=8,Lpos=270,L=aversa]{PGFZ}
+			
+			\Vertex[x=-18,y=4,Lpos=90,L=impersamim]{MBW}
+			\Vertex[x=-12,y=4,Lpos=270,L=impersa]{MZ}
+			\Vertex[x=-1,y=4,Lpos=270,L=ima]{M}
+			\Vertex[x=14,y=4,Lpos=90,L=aversamim]{FBW}
+			\Vertex[x=16,y=4,Lpos=270,L=aversa]{FZ}
+			
+			\Vertex[x=-9,y=0,Lpos=270,L=persa]{Z}
+			\Vertex[x=-2,y=0,Lpos=270,L=botra]{W}
+			\Vertex[x=7,y=0,Lpos=90,L=persamim]{BW}
+			
+			\Vertex[x=-11,y=-4,Lpos=270,L=perbo]{ZD}
+			\Vertex[x=-7,y=-4,Lpos=265,L=perbomim]{ZSW}
+			\Vertex[x=-3,y=-4,Lpos=270,L=botiken]{D}
+			\Vertex[x=1,y=-4,Lpos=90,L=botikemmim]{SW}
+			\Vertex[x=5,y=-4,Lpos=270,L=olbo]{BD}
+			\Vertex[x=9,y=-4,Lpos=90,L=olbomim]{BSW}
+			
+			\Vertex[x=-3,y=-8,Lpos=175,L=keðotiken]{DD}
+			\Vertex[x=1,y=-8,Lpos=275,L=keðotiken]{SD}
+			
+			\Vertex[x=-17,y=-11,L=female]{femalekey}
+			% Male
+			\tikzset{VertexStyle/.append style={shape=rectangle,minimum size=1em}}
+			\Vertex[x=-12,y=8,Lpos=270,L=imol]{MGMB}
+			\Vertex[x=-8,y=8,Lpos=270,L=keðavo]{MGF}
+			\Vertex[x=-4,y=8,Lpos=270,L=avolon]{MGFB}
+			\Vertex[x=6,y=8,Lpos=270,L=imol]{PGMB}
+			\Vertex[x=10,y=8,Lpos=270,L=keðavo]{PGF}
+			\Vertex[x=14,y=8,Lpos=270,L=avolon]{PGFB}
+			
+			\Vertex[x=-16,y=4,Lpos=270,L=imol]{MB}
+			\Vertex[x=-14,y=4,Lpos=90,L=imolim]{MZH}
+			\Vertex[x=1,y=4,Lpos=270,L=avo]{F}
+			\Vertex[x=12,y=4,Lpos=270,L=avolon]{FB}
+			\Vertex[x=18,y=4,Lpos=90,L=avolonim]{FZH}
+			
+			\Vertex[x=-7,y=0,Lpos=90,L=olnomim]{ZH}
+			\Vertex[x=2,y=0,Lpos=270,L=ǩalo]{H}
+			\Vertex[x=9,y=0,Lpos=270,L=olno]{B}
+			
+			\Vertex[x=-9,y=-4,Lpos=90,L=perǩamim]{ZDH}
+			\Vertex[x=-5,y=-4,Lpos=270,L=perǩa]{ZS}
+			\Vertex[x=-1,y=-4,Lpos=275,L=ǩatikemmim]{DH}
+			\Vertex[x=3,y=-4,Lpos=270,L=ǩatiken]{S}
+			\Vertex[x=7,y=-4,Lpos=90,L=olǩamim]{BDH}
+			\Vertex[x=11,y=-4,Lpos=270,L=olǩa]{BS}
+			
+			\Vertex[x=-1,y=-8,Lpos=265,L=keþaǩiken]{DS}
+			\Vertex[x=3,y=-8,Lpos=5,L=keþaǩiken]{SS}
+			
+			\Vertex[x=-17,y=-12,L=male]{malekey}
+			% Either male or female
+			\tikzset{VertexStyle/.append style={shape=diamond,minimum size=0.75em}}
+			\Vertex[x=-18,y=0,Lpos=265,L=konnis]{MBC}
+			\Vertex[x=-16,y=0,Lpos=90,L=konnisim]{MBCSP}
+			\Vertex[x=-14,y=0,Lpos=265,L=orže]{MZC}
+			\Vertex[x=-12,y=0,Lpos=90,L=oržemim]{MZCSP}
+			\Vertex[x=12,y=0,Lpos=265,L=komuš]{FBC}
+			\Vertex[x=14,y=0,Lpos=90,L=komušim]{FBCSP}
+			\Vertex[x=16,y=0,Lpos=265,L=konnis]{FZC}
+			\Vertex[x=18,y=0,Lpos=90,L=konnisim]{FZCSP}
+			
+			\Vertex[x=-17,y=-4,Lpos=265,L=konnis]{MBCC}
+			\Vertex[x=-13,y=-4,Lpos=265,L=konnis]{MZCC}
+			\Vertex[x=13,y=-4,Lpos=275,L=konnis]{FBCC}
+			\Vertex[x=17,y=-4,Lpos=275,L=konnis]{FZCC}
+			
+			\Vertex[x=-17,y=-8,Lpos=270,L=konnis]{MBCCC}
+			\Vertex[x=-13,y=-8,Lpos=270,L=konnis]{MZCCC}
+			\Vertex[x=-10,y=-8,Lpos=270,L=turag]{ZDC}
+			\Vertex[x=-6,y=-8,Lpos=270,L=turag]{ZSC}
+			\Vertex[x=6,y=-8,Lpos=270,L=turag]{BDC}
+			\Vertex[x=10,y=-8,Lpos=270,L=turag]{BSC}
+			\Vertex[x=13,y=-8,Lpos=270,L=konnis]{FBCCC}
+			\Vertex[x=17,y=-8,Lpos=270,L=konnis]{FZCCC}
+			
+			\Vertex[x=-17,y=-13,L=either female or male]{eitherkey}
+			% Ego
+			\SetVertexLabelIn
+			\tikzset{VertexStyle/.append style={shape=diamond,minimum size=3em}}
+			\Vertex[x=0,y=0,Lpos=270,L=mor]{E}
+			
+			\Edge(MGM)(MGF)
+			\Edge(PGM)(PGF)
+			\Edge(MZ)(MZH)
+			\Edge(MBW)(MB)
+			\Edge(M)(F)
+			\Edge(FBW)(FB)
+			\Edge(FZ)(FZH)
+			\Edge(MBC)(MBCSP)
+			\Edge(MZC)(MZCSP)
+			\Edge(Z)(ZH)
+			\Edges(W,E,H)
+			\Edge(BW)(B)
+			\Edge(FBC)(FBCSP)
+			\Edge(FZC)(FZCSP)
+			\Edge(ZD)(ZDH)
+			\Edge(ZSW)(ZS)
+			\Edge(D)(DH)
+			\Edge(SW)(S)
+			\Edge(BD)(BDH)
+			\Edge(BSW)(BS)
+			
+			\draw (0,4) -- (E);
+			\draw (Z) -- (-9,2) -- (9,2) -- (B);
+			\draw (E) -- (0,-2);
+			\draw (D) -- (-3,-2) -- (3,-2) -- (S);
+			\draw (-2,-4) -- (-2,-6);
+			\draw (DD) -- (-3,-6) -- (-1,-6) -- (DS);
+			\draw (2,-4) -- (2,-6);
+			\draw (SD) -- (1,-6) -- (3,-6) -- (SS);
+			\draw (-8,0) -- (-8,-2);
+			\draw (ZD) -- (-11,-2) -- (-5,-2) -- (ZS);
+			\draw (8,0) -- (8,-2);
+			\draw (BD) -- (5,-2) -- (11,-2) -- (BS);
+			\draw (-10,-4) -- (ZDC);
+			\draw (-6,-4) -- (ZSC);
+			\draw (6,-4) -- (BDC);
+			\draw (10,-4) -- (BSC);
+			\draw (-9,8) -- (-9,6);
+			\draw (MB) -- (-16,6) -- (-1,6) -- (M);
+			\draw (-12,6) -- (MZ);
+			\draw (9,8) -- (9,6);
+			\draw (F) -- (1,6) -- (16,6) -- (FZ);
+			\draw (12,6) -- (FB);
+			\draw (-17,4) -- (-17,2) -- (-18,2) -- (MBC);
+			\draw (-13,4) -- (-13,2) -- (-14,2) -- (MZC);
+			\draw (-17,0) -- (MBCC) -- (MBCCC);
+			\draw (-13,0) -- (MZCC) -- (MZCCC);
+			\draw (13,4) -- (13,2) -- (12,2) -- (FBC);
+			\draw (17,4) -- (17,2) -- (16,2) -- (FZC);
+			\draw (13,0) -- (FBCC) -- (FBCCC);
+			\draw (17,0) -- (FZCC) -- (FZCCC);
+			\draw (MGMZ) -- (-14,9) -- (-10,9) -- (MGM);
+			\draw (-12,9) -- (MGMB);
+			\draw (MGF) -- (-8,9) -- (-4,9) -- (MGFB);
+			\draw (-6,9) -- (MGFZ);
+			\draw (PGMZ) -- (4,9) -- (8,9) -- (PGM);
+			\draw (6,9) -- (PGMB);
+			\draw (PGF) -- (10,9) -- (14,9) -- (PGFB);
+			\draw (12,9) -- (PGFZ);
+			\end{tikzpicture}
+		\end{figure}
+	\end{landscape}
+}
+
 The \langtvk{} kinship system is similar to Lewis Henry Morgan's Sudanese kinship pattern, being largely descriptive with only a few classificatory terms. Siblings are distinguished from cousins, and parallel cousins are distinguished from cross cousins. Siblings and parallel cousins are identified by gender, while cross cousins are not. Parallel aunts and uncles are distinguished from cross aunts and uncles. Grandparents are identified by gender, but are otherwise undistinguished. Children and grandchildren are similarly identified by gender but otherwise undistinguished. See \autoref{fig:tvk-kinship} for a full kinship tree.
 
 All of the kinship terms within a nuclear family have distinct names distinguishing gender and generation.
@@ -102,167 +267,6 @@ Grandparents are distinguished by gender, but there is no distinction made betwe
 \end{description}
 
 One's grandparents' siblings are called by the same terms as for one's aunts and uncles. In other words, one would call one's maternal grandmother's brother the same term as one's mother would call that person, or as one would call one's own mother's brother.
-
-\begin{sidewaysfigure}[h]\centering
-	\caption{\langtvk{} Kinship Tree}
-	\label{fig:tvk-kinship}
-	\index{kinship}
-	\tiny
-	\begin{tikzpicture}[scale=0.5]
-	\GraphInit[vstyle=Normal]
-	\SetVertexLabelOut
-	% Female
-	\tikzset{VertexStyle/.append style={shape=circle,minimum size=1em}}
-	\Vertex[x=-14,y=8,Lpos=270,L=impersa]{MGMZ}
-	\Vertex[x=-10,y=8,Lpos=270,L=keðima]{MGM}
-	\Vertex[x=-6,y=8,Lpos=270,L=aversa]{MGFZ}
-	\Vertex[x=4,y=8,Lpos=270,L=impersa]{PGMZ}
-	\Vertex[x=8,y=8,Lpos=270,L=keðima]{PGM}
-	\Vertex[x=12,y=8,Lpos=270,L=aversa]{PGFZ}
-	
-	\Vertex[x=-18,y=4,Lpos=90,L=impersamim]{MBW}
-	\Vertex[x=-12,y=4,Lpos=270,L=impersa]{MZ}
-	\Vertex[x=-1,y=4,Lpos=270,L=ima]{M}
-	\Vertex[x=14,y=4,Lpos=90,L=aversamim]{FBW}
-	\Vertex[x=16,y=4,Lpos=270,L=aversa]{FZ}
-	
-	\Vertex[x=-9,y=0,Lpos=270,L=persa]{Z}
-	\Vertex[x=-2,y=0,Lpos=270,L=botra]{W}
-	\Vertex[x=7,y=0,Lpos=90,L=persamim]{BW}
-	
-	\Vertex[x=-11,y=-4,Lpos=270,L=perbo]{ZD}
-	\Vertex[x=-7,y=-4,Lpos=265,L=perbomim]{ZSW}
-	\Vertex[x=-3,y=-4,Lpos=270,L=botiken]{D}
-	\Vertex[x=1,y=-4,Lpos=90,L=botikemmim]{SW}
-	\Vertex[x=5,y=-4,Lpos=270,L=olbo]{BD}
-	\Vertex[x=9,y=-4,Lpos=90,L=olbomim]{BSW}
-	
-	\Vertex[x=-3,y=-8,Lpos=175,L=keðotiken]{DD}
-	\Vertex[x=1,y=-8,Lpos=275,L=keðotiken]{SD}
-	
-	\Vertex[x=-17,y=-11,L=female]{femalekey}
-	% Male
-	\tikzset{VertexStyle/.append style={shape=rectangle,minimum size=1em}}
-	\Vertex[x=-12,y=8,Lpos=270,L=imol]{MGMB}
-	\Vertex[x=-8,y=8,Lpos=270,L=keðavo]{MGF}
-	\Vertex[x=-4,y=8,Lpos=270,L=avolon]{MGFB}
-	\Vertex[x=6,y=8,Lpos=270,L=imol]{PGMB}
-	\Vertex[x=10,y=8,Lpos=270,L=keðavo]{PGF}
-	\Vertex[x=14,y=8,Lpos=270,L=avolon]{PGFB}
-	
-	\Vertex[x=-16,y=4,Lpos=270,L=imol]{MB}
-	\Vertex[x=-14,y=4,Lpos=90,L=imolim]{MZH}
-	\Vertex[x=1,y=4,Lpos=270,L=avo]{F}
-	\Vertex[x=12,y=4,Lpos=270,L=avolon]{FB}
-	\Vertex[x=18,y=4,Lpos=90,L=avolonim]{FZH}
-	
-	\Vertex[x=-7,y=0,Lpos=90,L=olnomim]{ZH}
-	\Vertex[x=2,y=0,Lpos=270,L=ǩalo]{H}
-	\Vertex[x=9,y=0,Lpos=270,L=olno]{B}
-	
-	\Vertex[x=-9,y=-4,Lpos=90,L=perǩamim]{ZDH}
-	\Vertex[x=-5,y=-4,Lpos=270,L=perǩa]{ZS}
-	\Vertex[x=-1,y=-4,Lpos=275,L=ǩatikemmim]{DH}
-	\Vertex[x=3,y=-4,Lpos=270,L=ǩatiken]{S}
-	\Vertex[x=7,y=-4,Lpos=90,L=olǩamim]{BDH}
-	\Vertex[x=11,y=-4,Lpos=270,L=olǩa]{BS}
-	
-	\Vertex[x=-1,y=-8,Lpos=265,L=keþaǩiken]{DS}
-	\Vertex[x=3,y=-8,Lpos=5,L=keþaǩiken]{SS}
-	
-	\Vertex[x=-17,y=-12,L=male]{malekey}
-	% Either male or female
-	\tikzset{VertexStyle/.append style={shape=diamond,minimum size=0.75em}}
-	\Vertex[x=-18,y=0,Lpos=265,L=konnis]{MBC}
-	\Vertex[x=-16,y=0,Lpos=90,L=konnisim]{MBCSP}
-	\Vertex[x=-14,y=0,Lpos=265,L=orže]{MZC}
-	\Vertex[x=-12,y=0,Lpos=90,L=oržemim]{MZCSP}
-	\Vertex[x=12,y=0,Lpos=265,L=komuš]{FBC}
-	\Vertex[x=14,y=0,Lpos=90,L=komušim]{FBCSP}
-	\Vertex[x=16,y=0,Lpos=265,L=konnis]{FZC}
-	\Vertex[x=18,y=0,Lpos=90,L=konnisim]{FZCSP}
-	
-	\Vertex[x=-17,y=-4,Lpos=265,L=konnis]{MBCC}
-	\Vertex[x=-13,y=-4,Lpos=265,L=konnis]{MZCC}
-	\Vertex[x=13,y=-4,Lpos=275,L=konnis]{FBCC}
-	\Vertex[x=17,y=-4,Lpos=275,L=konnis]{FZCC}
-	
-	\Vertex[x=-17,y=-8,Lpos=270,L=konnis]{MBCCC}
-	\Vertex[x=-13,y=-8,Lpos=270,L=konnis]{MZCCC}
-	\Vertex[x=-10,y=-8,Lpos=270,L=turag]{ZDC}
-	\Vertex[x=-6,y=-8,Lpos=270,L=turag]{ZSC}
-	\Vertex[x=6,y=-8,Lpos=270,L=turag]{BDC}
-	\Vertex[x=10,y=-8,Lpos=270,L=turag]{BSC}
-	\Vertex[x=13,y=-8,Lpos=270,L=konnis]{FBCCC}
-	\Vertex[x=17,y=-8,Lpos=270,L=konnis]{FZCCC}
-	
-	\Vertex[x=-17,y=-13,L=either female or male]{eitherkey}
-	% Ego
-	\SetVertexLabelIn
-	\tikzset{VertexStyle/.append style={shape=diamond,minimum size=3em}}
-	\Vertex[x=0,y=0,Lpos=270,L=mor]{E}
-	
-	\Edge(MGM)(MGF)
-	\Edge(PGM)(PGF)
-	\Edge(MZ)(MZH)
-	\Edge(MBW)(MB)
-	\Edge(M)(F)
-	\Edge(FBW)(FB)
-	\Edge(FZ)(FZH)
-	\Edge(MBC)(MBCSP)
-	\Edge(MZC)(MZCSP)
-	\Edge(Z)(ZH)
-	\Edges(W,E,H)
-	\Edge(BW)(B)
-	\Edge(FBC)(FBCSP)
-	\Edge(FZC)(FZCSP)
-	\Edge(ZD)(ZDH)
-	\Edge(ZSW)(ZS)
-	\Edge(D)(DH)
-	\Edge(SW)(S)
-	\Edge(BD)(BDH)
-	\Edge(BSW)(BS)
-	
-	\draw (0,4) -- (E);
-	\draw (Z) -- (-9,2) -- (9,2) -- (B);
-	\draw (E) -- (0,-2);
-	\draw (D) -- (-3,-2) -- (3,-2) -- (S);
-	\draw (-2,-4) -- (-2,-6);
-	\draw (DD) -- (-3,-6) -- (-1,-6) -- (DS);
-	\draw (2,-4) -- (2,-6);
-	\draw (SD) -- (1,-6) -- (3,-6) -- (SS);
-	\draw (-8,0) -- (-8,-2);
-	\draw (ZD) -- (-11,-2) -- (-5,-2) -- (ZS);
-	\draw (8,0) -- (8,-2);
-	\draw (BD) -- (5,-2) -- (11,-2) -- (BS);
-	\draw (-10,-4) -- (ZDC);
-	\draw (-6,-4) -- (ZSC);
-	\draw (6,-4) -- (BDC);
-	\draw (10,-4) -- (BSC);
-	\draw (-9,8) -- (-9,6);
-	\draw (MB) -- (-16,6) -- (-1,6) -- (M);
-	\draw (-12,6) -- (MZ);
-	\draw (9,8) -- (9,6);
-	\draw (F) -- (1,6) -- (16,6) -- (FZ);
-	\draw (12,6) -- (FB);
-	\draw (-17,4) -- (-17,2) -- (-18,2) -- (MBC);
-	\draw (-13,4) -- (-13,2) -- (-14,2) -- (MZC);
-	\draw (-17,0) -- (MBCC) -- (MBCCC);
-	\draw (-13,0) -- (MZCC) -- (MZCCC);
-	\draw (13,4) -- (13,2) -- (12,2) -- (FBC);
-	\draw (17,4) -- (17,2) -- (16,2) -- (FZC);
-	\draw (13,0) -- (FBCC) -- (FBCCC);
-	\draw (17,0) -- (FZCC) -- (FZCCC);
-	\draw (MGMZ) -- (-14,9) -- (-10,9) -- (MGM);
-	\draw (-12,9) -- (MGMB);
-	\draw (MGF) -- (-8,9) -- (-4,9) -- (MGFB);
-	\draw (-6,9) -- (MGFZ);
-	\draw (PGMZ) -- (4,9) -- (8,9) -- (PGM);
-	\draw (6,9) -- (PGMB);
-	\draw (PGF) -- (10,9) -- (14,9) -- (PGFB);
-	\draw (12,9) -- (PGFZ);
-	\end{tikzpicture}
-\end{sidewaysfigure}
 
 \index{kinship|)}
 

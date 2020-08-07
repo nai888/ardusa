@@ -11,14 +11,15 @@ This chapter will present the phonological inventory of consonants and vowels an
 \index{consonants|(}
 
 \afterpage{\clearpage
-	\begin{sidewaystable}
-		\scriptsize
+	\begin{landscape}
+	\begin{table}[p]
+		\centering
 		\index{consonants!inventory}\index{allophony}\index{consonants!allophones|see {allophony}}
 		\caption[\langtvk{} Consonant Inventory]{\langtvk{} Phonetic Consonant Inventory (allophones in parentheses)}
 		\label{tab:tvk-consonants}
-		\begin{tabu} to \textheight {| r | X[c] X[c] X[c] X[c] X[c] X[c] X[c] X[c] X[c] X[c] X[c] X[c] X[c] X[c] X[c]}
-			\toprule
-			Consonants
+		\begin{tabu} to \linewidth { B X[c] X[c] X[c] X[c] X[c] X[c] X[c] X[c] X[c] X[c] X[c] X[c] X[c] X[c] X[c]}
+			\tableheaderfont
+			% empty cell
 			& \multicolumn{2}{c}{Bilabial}
 			& \multicolumn{2}{c}{Labio-dental}
 			& \multicolumn{2}{c}{Dental}
@@ -26,7 +27,12 @@ This chapter will present the phonological inventory of consonants and vowels an
 			& \multicolumn{2}{c}{Post-alveolar}
 			& \multicolumn{2}{c}{Velar}
 			\\
-			\midrule
+			\cmidrule(lr){2-3}
+			\cmidrule(lr){4-5}
+			\cmidrule(lr){6-7}
+			\cmidrule(lr){8-9}
+			\cmidrule(lr){10-11}
+			\cmidrule(lr){12-13}
 			Nasal
 			&      & m    % Bilabial
 			&      &      % Labiodental
@@ -91,13 +97,15 @@ This chapter will present the phonological inventory of consonants and vowels an
 			\\
 			\bottomrule
 		\end{tabu}
-	\end{sidewaystable}
+	\end{table}
+	\end{landscape}
 	\clearpage
 	\index{consonants!romanization}
 	\begin{longtabu} to \textwidth {c c c c c X[l]}
 		\caption{\langtvk{} Consonant Romanization}\label{tab:tvk-consromanization}\\
 		\toprule
-		\textbf{Phone} & \textbf{Phoneme} & \textbf{Script} & \textbf{Romanization} & \textbf{English} & \textbf{Notes}\\
+		\tableheaderfont
+		Phone & Phoneme & Script & Romanization & English & Notes\\
 		\midrule
 		\endhead
 		\multicolumn{5}{r}{\textit{continued on the next page\ldots}}\\

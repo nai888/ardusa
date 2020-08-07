@@ -12,11 +12,12 @@
 % Layouts
 \usepackage{afterpage}
 \usepackage{multicol}
-\usepackage{rotating}
+% \usepackage{rotating}
 \usepackage{longtable}
 \usepackage{tabu}
 \usepackage{multirow}
 \usepackage{etoolbox}
+\usepackage{pdflscape} % https://tex.stackexchange.com/a/19021; alternative to rotating; rotates pages on screen
 
 % Graphics
 \usepackage{graphicx}
@@ -54,6 +55,12 @@
 	Extension = .otf ,
 	UprightFont = *-Regular ]
 \DeclareTextFontCommand{\scr}{\scrff}
+
+% Tabu table header font
+\newcommand{\tableheaderfont}{\rowfont{\upshape\bfseries}}
+
+% Custom Tabu table column types
+\newcolumntype{B}{>{\bfseries}X}
 
 % FontAwesome icons
 \usepackage{fontawesome}
