@@ -47,13 +47,36 @@
 
 % Set fonts
 \usepackage{fontspec}
-\setmainfont{Junicode}[Ligatures=TeX,Numbers=Lowercase]
-\setsansfont{Fira Sans}[Ligatures=TeX,Numbers=Lowercase]
-\setmonofont{Noto Sans Mono}[Ligatures=TeX,Numbers=Lowercase]
+\setmainfont{Junicode}[
+	Extension      = .ttf,
+	BoldFont       = *-Bold,
+	ItalicFont     = *-Italic,
+	BoldItalicFont = *-BoldItalic,
+	Ligatures      = TeX,
+	Numbers        = Lowercase]
+\setsansfont{FiraSans}[
+	Extension      = .ttf,
+	UprightFont    = *-Regular,
+	BoldFont       = *-Bold,
+	ItalicFont     = *-Italic,
+	BoldItalicFont = *-BoldItalic,
+	Ligatures      = TeX,
+	Numbers        = Lowercase]
+\setmonofont{NotoMono}[
+	Extension      = .ttf,
+	UprightFont    = *-Regular,
+	BoldFont       = *-Regular,
+	ItalicFont     = *-Regular,
+	BoldItalicFont = *-Regular,
+	Ligatures      = TeX%, Numbers        = Lowercase
+	]
 \newfontface{\scrff}{ArdusanSans}[
-	Path = ./Script/ ,
-	Extension = .otf ,
-	UprightFont = *-Regular ]
+	Path           = ./Script/ ,
+	Extension      = .otf ,
+	UprightFont    = *-Regular,
+	BoldFont       = *-Regular,
+	ItalicFont     = *-Regular,
+	BoldItalicFont = *-Regular ]
 \DeclareTextFontCommand{\scr}{\scrff}
 
 % Tabu table header font
@@ -63,7 +86,7 @@
 \newcolumntype{B}{>{\bfseries}X}
 
 % FontAwesome icons
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 
 % Colors customization
 \usepackage{xcolor}
@@ -146,7 +169,7 @@
 %\newleipzig{refl}{refl}{reflexive}% Already defined
 %\newleipzig{recp}{recp}{reciprocal}% Already defined
 %\newleipzig{ind}{ind}{indicative}% Already defined
-\newleipzig{sbjv}{sbjv}{subjunctive}% Already defined as subj
+\renewleipzig{sbjv}{sbjv}{subjunctive}% Already defined as subj
 %\newleipzig{cond}{cond}{conditional}% Already defined
 \newleipzig{opt}{opt}{optative}
 \newleipzig{des}{des}{desiderative}
@@ -686,6 +709,6 @@
 
 % Index
 
-\printindex[tavonic]
+\printindex
 
 \end{document}
