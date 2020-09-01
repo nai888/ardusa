@@ -23,6 +23,12 @@
 \usepackage{graphicx}
 \usepackage{tkz-graph}
 
+% Import PDFs and Images as Pages
+\usepackage{pdfpages}
+
+% Customize caption formatting
+\usepackage{caption}
+
 % Calculations
 \usepackage{calc}
 
@@ -424,6 +430,18 @@
 % Preface
 
 \input{./Chapters/Frontmatter/preface.tex}
+
+% Map Image
+
+\afterpage{\clearpage
+	\begin{figure}
+		\addcontentsline{toc}{chapter}{Map of Ardusa}
+		\captionsetup{labelformat=empty}
+		\caption[Map of Ardusa]{}
+		\label{fig:ardusa-map}\index{map}
+		\includepdf{./Images/Ardusa Map.jpg}
+	\end{figure}
+}
 
 % Main matter
 
