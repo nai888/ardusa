@@ -218,7 +218,7 @@ Note that the singular intransitive case is entirely unmarked by any preposition
 	\endgl
 \xe
 
-However, the subject of certain transitive verbs will also take the intransitive case if the semantic meaning of the verb is stative. See \autoref{subsubsec:tvk-nouns-dative} for more information on this use of the Dative, and see \autoref{subsubsec:tvk-verb-stative} for more information on stative verbs. Since it is used in these situations, and since the intransitive is the citation form, the case is normally referred to as the absolutive case, even when used intransitively. These terms are interchangeable.
+However, the subject of certain transitive verbs will also take the intransitive case if the semantic meaning of the verb is stative. See \autoref{subsubsec:tvk-nouns-dative} for more information on this use of the Dative, and see \autoref{subsubsec:tvk-verb-activeness} for more information on stative verbs. Since it is used in these situations, and since the intransitive is the citation form, the case is normally referred to as the absolutive case, even when used intransitively. These terms are interchangeable.
 
 \ex<ex:tvk-noun-abs-trans>
 	\begingl
@@ -289,7 +289,7 @@ The absolutive case is also used when directly addressing someone in a vocative 
 \subsubsection{Ergative}
 \label{subsubsec:tvk-nouns-ergative}
 
-The ergative case marks a noun or noun phrase that serves as the subject of an active transitive verb or any ditransitive verb. This means that when a verb has multiple arguments and the semantic meaning of the verb is active, the subject argument will by default by in the ergative case. See \autoref{subsubsec:tvk-verb-active} for more information on active verbs.
+The ergative case marks a noun or noun phrase that serves as the subject of an active transitive verb or any ditransitive verb. This means that when a verb has multiple arguments and the semantic meaning of the verb is active, the subject argument will by default by in the ergative case. See \autoref{subsubsec:tvk-verb-activeness} for more information on active verbs.
 
 \pex<ex:tvk-noun-erg>
 	\a<eðerali>\begingl
@@ -358,7 +358,7 @@ The dative case marks a noun or noun phrase that serves as the indirect object o
 	\endgl
 \xe
 
-Certain monotransitive verbs are used with the absolutive and dative cases instead of the ergative and accusative cases. These tend to be stative verbs in which the object of the verb is unaffected by the action or there is little volition on the part of the subject. See \autoref{subsubsec:tvk-verb-stative} for more information on stative verbs.
+Certain monotransitive verbs are used with the absolutive and dative cases instead of the ergative and accusative cases. These tend to be stative verbs in which the object of the verb is unaffected by the action or there is little volition on the part of the subject. See \autoref{subsubsec:tvk-verb-activeness} for more information on stative verbs.
 
 \pex<ex:tvk-noun-dat-trans>
 	\a<teguli>\begingl
@@ -978,41 +978,112 @@ Verbs are the primary class of words that carries inflection, showing informatio
 \subsection{Types of Verbs}
 \label{subsec:tvk-verb-types}
 
-\subsubsection{Active Verbs}
-\label{subsubsec:tvk-verb-active}
-
-\subsubsection{Stative Verbs}
-\label{subsubsec:tvk-verb-stative}
+There are a number of ways verbs in \langtvk{} can be divided into groups, each of which treats its arguments differently. Verbs differ in valency, meaning that some verbs may have one argument (intransitive) while others have two (transitive), three (ditransitive), a variable number (ambitransitive), or even no argument at all (impersonal). Verbs also differ in activeness, with some being active and others stative. There are also three (largely arbitrary) classes of verbs that govern the shape of the inflected morphology.
 
 \subsubsection{Verb Valency}
 \label{subsubsec:tvk-verb-valency}
 
+Verbs can be grouped by valency into intransitive, transitive, ambitransitive, and ditransitive depending on how many arguments it takes.
+
+Intransitive verbs are those that have only one argument. These tends to be verbs describing involuntary processes, bodily functions, motion, and position, as well as weather verbs.
+
+\pex<ex:tvk-vb-val-intr>
+	\a<aruli>\begingl
+		\glpreamble\scr{Mos persa arum.}\\
+		\fw{Mos persa arum.}\\
+		\phnm{mos per\pstrs sa a\pstrs rum}//
+		\gla ∅= mos persa ar-um//
+		\glb \An.\Sg.\Abs= \Fps.\Gen{} sister stand-\Ind.\Pst.\Ipfv//
+		\glft\defn{My sister was standing.}//
+	\endgl
+	\a<puzali>\begingl
+		\glpreamble\scr{Sur puzak.}\\
+		\fw{Sur puzak.}\\
+		\phnm{sur pu\pstrs zak}//
+		\gla sur puz-ak//
+		\glb \Tps.\An.\Abs{} fall-\Ind.\Pst.\Pfv//
+		\glft\defn{She fell.}//
+	\endgl
+	\a<orðali>\begingl
+		\glpreamble\scr{Sur bag orða.}\\
+		\fw{Sur bag orða.}\\
+		\phnm{sur bag or\pstrs ða}//
+		\gla sur bag orð-a//
+		\glb \Tps.\An.\Abs{} now cry-\Ind.\Npst.\Ipfv//
+		\glft\defn{Now she is crying.}//
+	\endgl
+\xe
+
+Weather verbs are a special class of intransitive verbs in that generally the only argument it can take is a dummy pronoun, \fw{gir}. In this way, weather verbs really have zero valency, though morphologically they are treated as though they are intransitive.
+
+\pex<ex:tvk-vb-val-weather>
+	\a<rain>\begingl
+		\glpreamble\scr{Gir olvaš.}\\
+		\fw{Gir olvaš.}\\
+		\phnm{gir ol\pstrs vaʃ}//
+		\gla gir olv-aš//
+		\glb \Tps.\In.\Abs{} rain-\Ind.\Npst.\Rtsp//
+		\glft\defn{It has rained.}//
+	\endgl
+	\a<snow>\begingl
+		\glpreamble\scr{Gir irbe.}\\
+		\fw{Gir irbe.}\\
+		\phnm{gir ir\pstrs be}//
+		\gla gir irb-e//
+		\glb \Tps.\In.\Abs{} snow-\Ind.\Npst.\Ipfv//
+		\glft\defn{It is snowing.}//
+	\endgl
+\xe
+
+\subsubsection{Verb Activeness}
+\label{subsubsec:tvk-verb-activeness}
+
+Verb activeness
+
 \subsubsection{Verb Classes}
 \label{subsubsec:tvk-verb-classes}
+
+Verb classes
 
 \subsection{Verb Structure}
 \label{subsec:tvk-verb-structure}
 
+Verb structure
+
 \subsection{Tense}
 \label{subsec:tvk-verb-tense}
+
+Tense
 
 \subsection{Aspect}
 \label{subsec:tvk-verb-aspect}
 
+Aspect
+
 \subsection{Mood}
 \label{subsec:tvk-verb-mood}
+
+Mood
 
 \subsection{Modals}
 \label{subsec:tvk-verb-modals}
 
+Modals
+
 \subsection{Infinitives}
 \label{subsec:tvk-verb-infinitives}
+
+Infinitives
 
 \subsection{Participles}
 \label{subsec:tvk-verb-participles}
 
+Participles
+
 \subsection{Negation}
 \label{subsec:tvk-verb-negation}
+
+Negation
 
 \section{Modifiers}
 \label{sec:tvk-modifiers}
